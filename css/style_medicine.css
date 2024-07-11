@@ -1,0 +1,1369 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.click_a{
+    display: block;
+    width: 100%;
+}
+.medi_center{
+    display: flex;
+    justify-content: center;
+}
+
+/*Headbar*/
+#stay_headbar {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;    
+    position: sticky;
+    z-index: 1;
+    justify-content: center;
+  }
+
+#stay_headbar ul li {
+    list-style: none;
+}
+
+#stay_rows{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+#stay_input{
+    position: relative;
+    bottom: -5px;
+    border: 1px solid pink;
+    width: 200px;
+    height: 40px;
+    background-color: #ffa5b9;
+    border-radius: 5px; 
+  }
+
+  #headbar_search{
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+    color: whitesmoke;
+    border: none;
+    position: relative;
+    bottom: -4px;
+    left: 3px;
+  
+  }
+  #stay_search{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 5px;
+    top: 10px;
+  }
+
+
+
+.box{
+    display: flex;
+    justify-content: center;
+  }
+
+.box li {
+    width: 200px;
+    margin-top: 10px;
+    color:black;
+    
+    list-style: none;
+    margin-left:2px;
+    text-align: center;
+    padding: 5px;
+    cursor: url('../img/pawprint.png'), auto;
+    transition: background-color 0.2s linear;
+    font-size: 20px;
+    font-weight: bold; 
+  }
+
+.box > li {
+    height: 50px;
+    padding: 0;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 50px;
+}
+.box > li a{
+    color: black;
+}
+.box li:hover{
+    background-color: pink;
+
+}
+
+#cha1 {
+  position: relative;
+  margin-left: 50px;
+}
+
+#cha1 .con1 {
+    position: absolute;
+    left: -1px;
+    top: 50px;
+    display: none;
+
+}
+
+#cha1:hover .con1 {
+  display: block;
+}
+
+/*Định dạng lại cấu trúc của con*/
+#cha1 > .con1 li {
+    width: 200px;
+    background-color: white;
+    margin-top: 2px;
+    height: 40px;
+    line-height: 30px;
+}
+
+#cha1 > .con1 li:hover{
+    background-color: pink;
+}
+
+#cha2{
+    position: relative;
+}
+
+#cha2 > .con2  li{
+    width: 200px;
+    background-color: white;
+    margin-top: 2px;
+}
+
+#cha2 .con2{
+position: absolute;
+    top: 50px;
+    left: -1px;
+    display: none;
+
+}
+#cha2:hover .con2{
+display: block;
+}
+
+#cha2 > .con2 li{
+  width: 200px;
+  background-color: white;
+  margin-top: 2px;
+  height: 40px;
+  line-height: 30px;
+}
+
+#cha2 > .con2 li:hover{
+background-color: pink;
+}
+.box li a{
+    text-decoration: none;
+}
+
+.cha1 li a{
+    text-decoration: none;
+}
+
+.cha2 li a{
+    text-decoration: none;
+}
+/*Poster*/
+.medi_poster{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/posterrsogiunn.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#medi_poster_b{
+    padding-top: 50px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px lightskyblue;
+    padding-left: 150px;
+    font-family: "Coiny", cursive;
+}
+
+#medi_poster_text{
+  line-height: 65px;
+  position: relative;
+  top: -320px;
+  font-size: 80px;
+  color: palevioletred;
+  font-family: "Coiny", cursive;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding-top: 50px;
+}
+
+#medi_poster_text hr{
+    width: 300px;
+}
+.medi_center b{
+  text-shadow: 2px 2px 4px lightskyblue;
+}
+
+#medi_poster_text2{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+
+
+
+#stay_icon_home{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -15px;
+}
+
+#stay_icon_hr{
+    width: 20px;
+    border: 1px black solid;
+}
+
+#stay_header{
+    font-family: "Coiny", cursive;
+    font-size: 40px;
+    color: #38a7ff;
+    text-shadow: 2px 2px 4px pink;
+}
+
+/*Content*/
+#medicine_body{
+    width: 100%;
+    margin: auto;
+    font-family:  Arial;
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+    top: -230px;
+}
+
+.medicine{
+    display: flex;
+    justify-content: center;
+}
+
+#medi_poster{
+    width: 100%;
+    height: 300px;
+}
+#medi_icon_cats{
+    width: 200px;
+    height: 30px;
+}
+
+#medi_font{
+    font-size: 20px;
+    color: black;
+
+}
+
+#medi_text_header{
+    font-size: 15px;
+    color: black;
+    
+}
+
+
+.medi_hr{
+    width : 30%;
+    border: 1px solid #a02424;
+}
+
+#medi_header1{
+    font-size: 38px;
+    color: #a02424 ;
+    position: relative;
+    bottom: -10px;
+}
+#medi_header_border{
+    border: 3px dashed #a02424;
+    padding: 25px;
+    width : 70%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.medi_icon{
+    width : 50px;
+    height: 50px;
+    position: relative;
+    top: -15px;
+}
+
+#medi_header2{
+    font-size: 25px;
+    color: palevioletred;
+    font-family: "Coiny", cursive;
+    position: relative;
+    bottom: -10px;
+}
+
+.medi_ruler{
+    width: 100%;
+    height: 50px;
+    background-color: #bee1f7;
+    display: flex;
+    justify-content: center;
+}
+
+#medi_content1_full{
+    width: 90%;
+    padding: 30px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+#medi_content1{
+    text-align: justify;
+    color: black;
+    font-size: 15px;
+}
+
+#medi_img_Den{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+#medi_img_Meo{
+    margin-right: 20px;
+    width: 200px;
+    height: 160px;
+    margin-left: 30px;
+}
+
+
+
+
+/*Thông tin các loại vaccine*/
+#medicine_vaccine_full{
+   
+    width: 80%;
+    margin: auto;
+}
+.medicine_vaccine_box{
+    background-color: #bee1f7;
+    border: 1px solid skyblue;
+    width: 350px;
+    height: 210px;
+    box-shadow: 5px 5px 5px grey;
+    padding-left: 20px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.medicine_vaccine_b{
+    font-size: 25px;
+    color: #a02424;
+
+}
+
+.medicine_vaccine_img{
+    width: 200px;
+    height: 200px;
+}
+
+.medicine_vaccine_text{
+    position: relative;
+    top: -120px;
+    text-align: center;
+    color: black;
+
+}
+
+.medicine_vaccine_content{
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 500px;
+
+}
+#medicine_vaccine_title{
+    font-size: 40px;
+    color: #a02424;
+}
+#medicine_hr{
+    border: 1px solid skyblue;
+    width: 60%;
+
+}
+
+.medicine_vaccine_hr_height1{
+    width: 0px;
+    height: 360px;
+    border: 2px solid skyblue;
+  
+}
+
+.medicine_vaccine_hr_height2{
+    width: 0px;
+    height: 450px;
+    border: 2px solid skyblue;
+  
+}
+#medicine_hr_width{
+    width: 100%;
+    border: 2px solid skyblue;
+}
+.medicine_vaccine_text2{
+    font-size: 20px;
+    color: #a02424;
+    padding-left: 20px;
+}
+
+
+/*Những câu hỏi thường gặp*/
+
+
+.stay_title2 b{
+    font-size: 30px;
+    text-align: center;
+    color: palevioletred;
+    display: flex;
+    justify-content: center;
+}
+
+.service_model_header{
+    color: darkgreen;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    
+}
+
+.service_hr_add{
+  display: flex;
+  justify-content: center;
+}
+
+.service_hr_add hr{
+  border: 2px solid #a02424;
+  width: 100px;
+  height: 0px;
+  position: relative;
+  top: 30px;
+}
+
+.service_hr_add img{
+  width : 50px;
+  height: 40px;
+}
+.content_question{
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  #tieude_img{
+    width: 500px;
+    height: 230px;
+  }
+  
+  #tieude_text{
+    font-size: 25px;
+    color: darkgreen;
+    text-transform: uppercase;
+    position: relative;
+    top: -90px;
+  }
+  
+  .box_full{
+    padding: 10px 20px 10px 20px;
+  }
+  
+  #dogrthacmac{
+    margin: 20px 20px 20px 20px;
+  }
+  
+  #dogthacmac img{
+    width: 200px;
+    height: 150px;
+  }
+  
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .question_box{
+    border-radius: 10px;
+    background-color:  #d6effe;
+    height: 50px;
+    width: 800px;
+    padding:10px 20px 10px 20px;
+    display: block;
+    font-size: 18px;
+    border: 1px solid white;
+  }
+  .question_box:hover {
+    cursor: url('../img/pawprint.png'), auto;
+    color: palevioletred;
+  }
+  
+  .close_box{
+    width: 35px;
+    height: 20px;
+    cursor: url('../img/pawprint.png'), auto;
+    margin-left: 720px;
+  }
+  
+  
+  .anser_box{
+    display: none;
+    background-color: aliceblue;
+    height: auto;
+    width: 800px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  
+  #stay_icon_home{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -15px;
+}
+
+#stay_icon_hr{
+    width: 20px;
+    border: 1px black solid;
+}
+
+
+
+/*Phần quảng cáo thương hiệu*/
+#spa_pr_tb{
+    width: 700px;
+    height: 70px;
+  }
+  .spa_pr_tb_b{
+    color: palevioletred;
+    font-size: 45px;
+  }
+  #spa_pr_tb_div{
+    display: flex;
+    width: 100%;
+  }
+  #spa_pr_tb_div hr{
+    width: 1px;
+    height: 55px;
+    border: 2px solid palevioletred;
+  }
+  
+  #spa_pr_tb_div b{
+    font-size: 30px;
+    text-align: left;
+    color: palevioletred;
+    margin-left: 5px;
+    line-height: 30px;
+  }
+  
+  #spa_pr_d2_icon{
+    height: 25px;
+    width: 100%;
+  }
+  #spa_pr_d2_hr{
+    width: 50%;
+    border: 1px dashed palevioletred;
+  }
+  
+  #spa_pr_d2_font{
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .spa_center{
+    display: flex;
+    justify-content: center;
+  
+  }
+  #color{
+    background-color: aliceblue;
+    border: 1px solid #f7b7c7;
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+  }
+  
+  .medicine_vaccine_row{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 576px) {
+    /*Headbar*/
+         /*Headbar*/
+         #stay_headbar {
+          width: 100%;
+          height: 20px;
+          margin-top: 30px;
+          background-color: white;
+          display: flex;    
+          position: sticky;
+          z-index: 1;
+          justify-content: center;
+        }
+      
+      #stay_headbar ul li {
+          list-style: none;
+      }
+      
+      #stay_rows{
+          width: 30%;
+          display: flex;
+          justify-content: none;
+      }
+      #stay_input{
+          display: none;
+        }
+      
+        #headbar_search{
+          width: 50px;
+          height: 20px;
+          border-radius: 5px;
+          color: whitesmoke;
+          border: none;
+          position: relative;
+          bottom: -2px;
+          left: 3px;
+        
+        }
+        #stay_search{
+          width: 10px;
+          height: 10px;
+          position: relative;
+          left: 5px;
+          top: 8px;
+        }
+      
+      
+      
+      .box{
+          display: flex;
+          justify-content: none;
+          margin-left: -50px;
+        }
+      
+      .box li {
+          width: 70px;
+          margin-top: -10px;
+          color:black;
+          
+          list-style: none;
+          margin-left:2px;
+          text-align: center;
+          padding: 5px;
+          cursor: url('../img/pawprint.png'), auto;
+          transition: background-color 0.2s linear;
+          font-size: 5px;
+          font-weight: bold; 
+          height: 20px;
+        }
+      
+      .box > li {
+          height: 30px;
+          padding: 0;
+          margin-top: 0;
+          font-size: 7px;
+          line-height: 20px;
+      }
+      .box > li a{
+          color: black;
+      }
+      .box li:hover{
+          background-color: pink;
+          height: 20px;
+      }
+      
+      #cha1 {
+        position: relative;
+        margin-left: 30px;
+        font-family: Arial;
+      }
+      
+      #cha1 .con1 {
+          position: absolute;
+          left: -1px;
+          top: 20px;
+          display: none;
+      
+      }
+      
+      #cha1:hover .con1 {
+        display: block;
+      }
+      
+      /*Định dạng lại cấu trúc của con*/
+      #cha1 > .con1 li {
+          width: 70px;
+          font-size: 8px;
+          background-color: white;
+          margin-top: 2px;
+          height: 20px;
+          line-height: 10px;
+          font-family: Arial;
+      }
+      
+      #cha1 > .con1 li:hover{
+          background-color: pink;
+      }
+      
+      #cha2{
+          position: relative;
+      }
+      
+      #cha2 > .con2  li{
+          width: 100px;
+          background-color: white;
+          margin-top: 2px;
+          font-size: 8px;
+      }
+      
+      #cha2 .con2{
+      position: absolute;
+          top: 20px;
+          left: -1px;
+          display: none;
+      
+      }
+      #cha2:hover .con2{
+      display: block;
+      }
+      
+      #cha2 > .con2 li{
+        width: 70px;
+        background-color: white;
+        margin-top: 2px;
+        height: 20px;
+        line-height: 10px;
+      }
+    
+    
+    
+    
+    /*Poster*/
+    .medi_poster{
+      height: 170px;
+    }
+    
+    #medi_poster_b{
+      padding-top: 20px;
+      margin-top: 20px;
+      padding-left: 40px;
+    }
+    
+    #medi_poster_text{
+      line-height: 20px;
+      position: relative;
+      top: -150px;
+      font-size: 30px;
+      width: 250px;
+      height: 100px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+    
+    
+    #medi_poster_text hr{
+      display: none;
+    }
+    
+    #medi_poster_text2{
+      font-size: 10px;
+      line-height: 10px;
+      text-align: center;
+     
+    }
+    
+    #stay_header{
+    font-size: 16px;
+    }
+    
+    
+    
+    
+    /*Content*/
+    #medicine_body{
+      font-size: 10px;
+      line-height: 20px;
+      top: -100px;
+    }
+    
+    #medicine_body br{
+      display: none;
+    }
+    #medi_text_header{
+      font-size: 8px;
+    }
+    
+    .medi_icon{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 1px;
+    }
+    
+    #medi_header2{
+      font-size: 13px;
+    }
+    
+    .medi_ruler{
+      height: 30px;
+      margin-top: 10px;
+      padding-top: -30px;
+      margin-bottom: 10px;
+    }
+    
+    #medi_icon_cats{
+      width: 100px;
+      height: 15px;
+    }
+    
+    #medi_img_Den{
+      display: none;
+    }
+    
+    #medi_img_Meo{
+      display: none;
+    }
+    #medi_content1 p{
+      font-size: 10px;
+      line-height: 15px;
+    }
+    
+    .medicine_vaccine_row{
+      flex-direction: column;
+    }
+    .medicine_vaccine_hr_height1{
+      display: none;
+    }
+    .medicine_vaccine_hr_height2{
+      display: none;
+    }
+
+    #medicine_hr_width{
+      display: none;
+    }
+
+    .medicine_vaccine_content{
+      font-size: 10px;
+      width: 100%;
+      line-height: 15px;
+    }
+
+.medicine_vaccine_row br{
+  display: none;
+}
+    .medicine_vaccine_b{
+      font-size: 13px;
+    }
+#question_background br{
+  display: none;
+}
+
+#stay_icon_hr{
+  display: none;
+}
+#stay_icon_home{
+display: none;
+}
+    .medicine_vaccine_text2{
+      font-size: 11px;
+      padding-bottom: 20px;
+    }
+
+    #medicine_vaccine_full{
+      height: auto;
+    }
+
+    .medicine_color{
+      height: auto;
+    }
+
+
+    .question_box{
+      width: 250px;
+      height: 36px;
+      font-size: 10px;
+      padding:auto;
+      line-height: 12px;
+    }
+
+    .close_box{
+      width: 25px;
+      height: 15px;
+      margin-left: 180px;
+      font-size: 8px;
+    }
+
+    .anser_box{
+      font-size: 8px;
+      width: 250px;
+      height: auto;
+      line-height: 10px;
+    }
+
+    
+    .spa_pr_tb_b{
+      font-size: 15px;
+  
+    }
+    #spa_pr_tb_div b{
+      font-size: 10px;
+      line-height: 13px;
+     
+    }
+
+    #spa_pr_tb_div hr{
+      height: 25px;
+    border: 1px solid #a02424;
+    }
+    #spa_pr_tb{
+      width: 250px;
+      height: 30px;
+      margin-left: 25px;
+    }
+    #spa_pr_d2_font{
+      font-size: 8px;
+      width: 200px;
+      line-height: 10px;
+      
+    }
+    #spa_pr_d2_icon{
+      width: 50px;
+      height: 15px;
+    }
+
+    #color{
+      height: 300px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 577px) and (max-width: 1180px) {
+      /*Headbar*/
+      #stay_headbar {
+        width: 100%;
+        height: 50px;
+        margin-top: 60px;
+        background-color: white;
+        display: flex;    
+        position: sticky;
+        z-index: 1;
+        justify-content: center;
+      }
+    
+    #stay_headbar ul li {
+        list-style: none;
+    }
+    
+    #stay_rows{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    #stay_input{
+       display: none;
+      }
+    
+      #headbar_search{
+        width: 110px;
+        height: 20px;
+        border-radius: 5px;
+        color: whitesmoke;
+        border: none;
+        position: relative;
+        bottom: -4px;
+        left: 3px;
+      
+      }
+      #stay_search{
+        width: 15px;
+        height: 15px;
+        position: relative;
+        left: 5px;
+        top: 8px;
+      }
+    
+    
+    
+    .box{
+        display: flex;
+        justify-content: center;
+      }
+    
+    .box li {
+        width: 140px;
+        margin-top: 10px;
+        color:black;
+        
+        list-style: none;
+        margin-left:2px;
+        text-align: center;
+        padding: 5px;
+        cursor: url('../img/pawprint.png'), auto;
+        transition: background-color 0.2s linear;
+        font-size: 20px;
+        font-weight: bold; 
+      }
+    
+    .box > li {
+        height: 50px;
+        padding: 0;
+        margin-top: 0;
+        font-size: 15px;
+        line-height: 50px;
+    }
+    .box > li a{
+        color: black;
+    }
+    .box li:hover{
+        background-color: pink;
+    
+    }
+    
+    #cha1 {
+      position: relative;
+      margin-left: 50px;
+      font-family: Arial;
+    }
+    
+    #cha1 .con1 {
+        position: absolute;
+        left: -1px;
+        top: 50px;
+        display: none;
+    
+    }
+    
+    #cha1:hover .con1 {
+      display: block;
+    }
+    
+    /*Định dạng lại cấu trúc của con*/
+    #cha1 > .con1 li {
+        width: 140px;
+        font-size: 15px;
+        background-color: white;
+        margin-top: 2px;
+        height: 40px;
+        line-height: 30px;
+        font-family: Arial;
+    }
+    
+    #cha1 > .con1 li:hover{
+        background-color: pink;
+    }
+    
+    #cha2{
+        position: relative;
+    }
+    
+    #cha2 > .con2  li{
+        width: 140px;
+        background-color: white;
+        margin-top: 2px;
+        font-size: 15px;
+    }
+    
+    #cha2 .con2{
+    position: absolute;
+        top: 50px;
+        left: -1px;
+        display: none;
+    
+    }
+    #cha2:hover .con2{
+    display: block;
+    }
+    
+    #cha2 > .con2 li{
+      width: 140px;
+      background-color: white;
+      margin-top: 2px;
+      height: 40px;
+      line-height: 30px;
+    }
+
+
+      
+      
+      
+      
+      /*Poster*/
+      .medi_poster{
+        height: 170px;
+      }
+      
+      #medi_poster_b{
+        padding-top: 20px;
+        margin-top: 20px;
+        padding-left: 85px;
+      }
+      
+      #medi_poster_text{
+        line-height: 20px;
+        position: relative;
+        top: -150px;
+        font-size: 50px;
+        width: 434px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+      }
+      
+      
+      #medi_poster_text hr{
+        display: none;
+      }
+      
+      #medi_poster_text2{
+        font-size: 13px;
+        line-height: 17px;
+        text-align: center;
+       
+      }
+      
+      #stay_header{
+      font-size: 25px;
+      }
+      
+      
+      
+      
+      /*Content*/
+      #medicine_body{
+        font-size: 12px;
+        line-height: 25px;
+        top: -100px;
+        
+      }
+      
+      #medicine_body br{
+        display: none;
+      }
+      #medi_text_header{
+        font-size: 12px;
+      }
+      
+      .medi_icon{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 6px;
+      }
+      
+      #medi_header2{
+        font-size: 18px;
+     
+      }
+      
+      .medi_ruler{
+        height: 35px;
+        margin-top: 10px;
+        padding-top: -30px;
+        margin-bottom: 10px;
+      }
+      
+      #medi_icon_cats{
+        width: 100px;
+        height: 15px;
+      }
+      
+      #medi_img_Den{
+        display: none;
+      }
+      
+      #medi_img_Meo{
+        display: none;
+      }
+      #medi_content1 p{
+        font-size: 13px;
+        line-height: 20px;
+      }
+      
+      .medicine_vaccine_row{
+        flex-direction: column;
+      }
+      .medicine_vaccine_hr_height1{
+        display: none;
+      }
+      .medicine_vaccine_hr_height2{
+        display: none;
+      }
+  
+      #medicine_hr_width{
+        display: none;
+      }
+  
+      .medicine_vaccine_content{
+        font-size: 13px;
+        width: 100%;
+        line-height: 20px;
+      }
+  
+  .medicine_vaccine_row br{
+    display: none;
+  }
+      .medicine_vaccine_b{
+        font-size: 15px;
+      }
+  
+  #stay_icon_hr{
+    display: none;
+  }
+  #stay_icon_home{
+  display: none;
+  }
+      .medicine_vaccine_text2{
+        font-size: 13px;
+        padding-bottom: 20px;
+      }
+  
+      #medicine_vaccine_full{
+        height: auto;
+      }
+  
+      .medicine_color{
+        height:  3000px;
+      }
+  
+  
+      .question_box{
+        width: 520px;
+        height: 36px;
+        font-size: 13px;
+        padding:auto;
+        line-height: 20px;
+      }
+  
+      .close_box{
+        width: 25px;
+        height: 15px;
+        margin-left: 449px;
+        font-size: 8px;
+      }
+  
+      .anser_box{
+        font-size: 12px;
+        width: 520px;
+        height: auto;
+      }
+  
+      
+      .spa_pr_tb_b{
+        font-size: 25px;
+    
+      }
+      #spa_pr_tb_div b{
+        font-size: 20px;
+        line-height: 25px;
+       
+      }
+  
+      #spa_pr_tb_div hr{
+        height: 40px;
+        border: 1px solid #a02424;
+      }
+      #spa_pr_tb{
+        width: 450px;
+        height: 50px;
+        margin-left: 25px;
+      }
+      #spa_pr_d2_font{
+        font-size: 13px;
+        width: 400px;
+        line-height: 20px;
+        
+      }
+      #spa_pr_d2_icon{
+        width: 80px;
+        height: 20px;
+      }
+      }
+
+
+
+
+      /*height text nằm ở class  .medicine_color{
+        height:  2000px;
+      } */

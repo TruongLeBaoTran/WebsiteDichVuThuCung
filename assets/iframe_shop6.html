@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <title>Chó Con Tìm Chủ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        #main-shop6 {
+            width: 100%;
+            /* margin: 0 auto; */
+        }
+
+        .shop6-content {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .shop6-heading h3 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 20px 30px;
+        }
+
+        ul.shop6-products {
+            display: flex;/*Hiển thị hàng ngang*/
+            flex-wrap: wrap;/*Chia hàng ngang*/
+            justify-content: center;/*Căn giữa*/
+            list-style: none;
+            border-radius: 5px;
+        }
+
+        ul.shop6-products li {
+            /* width: 30%;
+            margin-bottom: 20px; */
+            flex-basis: calc(100%/4);/*Chiều rộng*/
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 30px;
+            /* background-color: #ffa5b9; */
+        }
+        
+        ul.shop6-products li:hover {
+            transform: scale(1.02);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .sh6-products-thumb {
+            width: 100%;
+            /* background-color: #ffa5b9; */
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sh6-products-thumb:hover {
+            filter: brightness(70%);
+        }
+
+        ul.shop6-products li img {
+            width: 100%;
+            height: auto;
+            /* border-radius: 30px; */
+            /* padding: 20px; */
+        }
+
+
+
+        ul.shop6-products li .sh6-products-info a {
+            padding: 10px 0;
+            display: block;
+            text-decoration: none;
+            
+        }
+
+        .sh6-products-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        .sh6-products-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: red;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sh6-products-price-notsale {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            padding: 0 20px;
+            text-decoration: line-through;
+            line-height: 18px;
+        }
+
+
+        .sh6-products-details {
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            border-radius: 10px;
+            /* background-color: #ffa5b9; */
+            margin-top: 10px;
+        }
+
+        .sh6-products-top {
+            position: relative;
+            overflow: hidden; /*Ẩn phần cha*/
+        }
+
+        .sh6-products-top:hover .sh6-products-buy {
+            bottom: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        .sh6-products-buy {
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            color: white;
+            background-color: green;
+            padding: 10px 0;
+            border-radius: 5px;
+            position: absolute;
+            width: 100%;
+            bottom: -45px;
+        }   
+
+        .sh6-products-buy:hover {
+            background-color: green;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .ti-shopping-cart {
+            margin-left: 10px;
+            font-weight: 400;
+
+        }
+
+        .sh6-products-price-star {
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            
+        }
+
+        .ti-star {
+            font-weight: 700;
+            font-size: 20px;
+            color: black;
+            margin: 0 5px;
+        }
+
+        .ti-star:hover {
+            color: red;
+        }
+        
+        .sh6-products-top img:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+        }
+
+       
+        .sh6-products-item:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .sh6-products-details:hover {
+            background-color: #ffa5b9;
+            color: white;
+            transition: all 0.1s ease-in-out;
+            border: 3px solid whitesmoke;
+
+        }
+
+        .sh6-products-top {
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .sh6-products-item .sh6-products-top {
+            /* background-color: #ffa5b9; */
+        }
+
+        #shop-main {
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+#shop-header {
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 63px;
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #shop-nav {
+    display: inline-block;
+} */
+
+#shop-nav {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
+}
+
+
+#shop-nav, .shop-subnav {
+    list-style: none;
+}
+
+#shop-nav > li {
+    display: inline-block;
+}
+
+#shop-nav li {
+    position: relative;
+}
+
+#shop-nav >li > a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#shop-nav  li  a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    display: inline-block;
+    border-radius: 2px;
+    
+}
+
+#shop-nav li:hover .shop-subnav {
+    display: block;
+}
+
+#shop-nav li:hover > a,
+#shop-nav .shop-subnav li:hover {
+    background-color: #ffa5b9;
+    color: white;
+    border-radius: 3px;
+}
+
+#shop-nav .shop-subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 236px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+}
+
+#shop-nav .shop-subnav a {
+    padding: 0 auto;
+    color: #000;
+    line-height: 40px;
+}
+
+#shop-nav .shop-subnav li:hover {
+    background-color: #ffa5b9;
+    color: white;
+}
+
+#shop-nav .shop-subnav li:hover > a {
+    background-color: #ffa5b9;
+    color: white;
+}
+
+#nav .nav-arr-down {
+    font-size: 20px;/*mặc định font là 16px*/
+}
+
+/*Làm cho .ti-shopping-cart nằm sát bên phải,
+dùng position: absolute*/
+.ti-shopping-cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 60px;
+    padding: 0 24px;
+    font-size: 30px;
+}
+
+.ti-shopping-cart:hover {
+    background-color: #ffa5b9;
+    border-radius: 50%;
+    color: white;
+}
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="main-shop6">
+        <div class="shop6-content">
+            <div id="shop-main">
+                <div id="shop-header">
+                    <!--Begin navigation-->
+                    <ul id="shop-nav">
+                        <li><a href="">Phụ Kiện
+                            <i class="nav-arr-down ti-angle-down"></i>
+                            </a>
+                            <ul class="shop-subnav">
+                                <li><a href="../assets/iframe_shop1.html" target="">Lồng Cho Pet</a></li>
+                                <li><a href="../assets/iframe_shop2.html" target="">Vòng Đeo Cổ</a></li>
+                                <li><a href="../assets/iframe_shop3.html" target="">Rọ Mõm Cho Chó</a></li>
+                                <li><a href="../assets/iframe_shop4.html" target="">Đồ Chơi</a></li>
+                                <li><a href="../assets/iframe_shop5.html" target="">Quần Áo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Mua Bán Thú Cưng
+                            <i class="nav-arr-down ti-angle-down"></i>
+                             </a>
+                            <ul class="shop-subnav">
+                                <li><a href="../assets/iframe_shop6.html">Chó Con Tìm Chủ</a></li>
+                                <li><a href="../assets/iframe_shop7.html">Mèo Con Tìm Chủ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../assets/iframe_shop8.html">Thức Ăn</a></li>
+                    </ul>
+                    <i class="cart-icon"> 
+                        <a href=""><i class="ti-shopping-cart"></i></a>
+                    </i>
+                </div>
+            </div>
+            <div class="shop6-heading">
+                <h3>Chó Con Tìm Chủ</h3>
+            </div>
+            <ul class="shop6-products">
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product1.jpg" alt="">
+                            </a>
+                            <a href="#" class="sh6-products-buy">Thêm vào giỏ hàng
+                               <i class="ti-shopping-cart"></i>
+
+                            </a>
+                            <!--Mua ngay-->
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">PHỐC SÓC</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product2.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">PITBULL</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product3.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">POODLE</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product4.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>    
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">PUG</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product5.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">SAMOYED</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product6.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">BORDER COLLIE</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product7.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">CHIHUAHUA</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh6-products-item">
+                        <div class="sh6-products-top">
+                            <a href="#" class="sh6-products-thumb">
+                                <img src="../img/shop6-product8.jpg" alt="">
+                            </a>
+                            <!--Mua ngay-->
+                            <a href="" class="sh6-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh6-products-info">
+                            
+                            <a href="#" class="sh6-products-name">CORGI</a>
+                            <div class="sh6-products-price">Liên Hệ</div>
+                            <div class="sh6-products-price-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <a href="#" class="sh6-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+        </div> 
+    </div>
+</body>
+</html>

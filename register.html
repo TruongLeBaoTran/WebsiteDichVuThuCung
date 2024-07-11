@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETCARE - Tài Khoản</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Đăng Nhập</button>
+                <button type="button" class="toggle-btn" onclick="register()">Đăng Ký</button>
+            </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Tên Tài Khoản" required>
+            <input type="text" class="input-field" placeholder="Mật Khẩu" required>
+            <input type="checkbox" class="check-box"><span>Ghi nhớ đăng nhập</span>
+            <button type="submit" class="submit-btn">Đăng Nhập</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Tên Tài Khoản" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Mật Khẩu" required>
+            <input type="checkbox" class="check-box"><span>Đồng ý với chính sách của chúng tôi</span>
+            <button type="submit" class="submit-btn">Đăng ký</button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left ="-400px";
+            y.style.left ="50px";
+            z.style.left ="110px";
+        }
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px";
+            z.style.left ="0px";
+        }
+
+    </script>
+    <a class="gotopbtn" href="index.html"><i class="fas fa-arrow-left"></i></a>
+</body>
+</html>

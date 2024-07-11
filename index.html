@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETCARE - Nơi tình yêu và sức khỏe cho thú cưng của bạn</title>
+    <link rel="shortcut icon" href="./img/petcare_icon_title.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./font-icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+<script>
+    $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+    });
+</script>
+</head>
+
+<body>
+
+    <!-- Headbar -->
+    <div id="header"></div>
+    
+    <!-- Sidebar -->
+    <div>
+        <input type="checkbox" id="check">
+        <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        </label>
+        <div class="sidebar">
+            <header>PET CARE</header>
+            <ul class="sidebar-nav">
+                <li><a href="index.html"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                <li><a href="./service.html"><i class="fas fa-briefcase"></i>DỊCH VỤ</a></li>
+                <li><a href="./shop.html"><i class="fas fa-shopping-cart"></i>PET SHOP</a></li>
+                <li><a href="./datlich.html"><i class="fas fa-calendar-week"></i>ĐẶT LỊCH</a></li>
+                <li><a href="#footer"><i class="fas fa-phone"></i>THÔNG TIN</a></li>
+            </ul>
+        </div>
+
+        <!--Messenger Contact-->
+        <!-- <a style="text-decoration:none" class='contac_messenger' id="messenge" onclick="audio.play()" href='https://m.me/118019591254404' target='_blank'>
+            <i class='fab fa-facebook-messenger rung'></i>
+            <p>
+                Liên hệ qua Messenger để được tư vấn nhanh nhất
+            </p>
+        </a> -->
+
+             <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "118019591254404");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+          <!-- Content -->
+          <article>
+            <!-- Poster -->
+            <div class="trangchu_poster"></div>
+            <div class="main_center">
+                <div class="trangchu_poster_text">
+                    Chào mừng bạn đến với
+                    <br> PETCARE
+                    <br><div class="trangchu_poster_text2"> Nơi mang lại tình yêu và sức khỏe cho thú cưng của bạn</div>
+                </div>
+            </div>
+           
+            
+            
+            
+            <!--Introduce All-->
+
+            <!--Giới thiệu tổng quan-->
+            <div class="home_intro_all_content">
+                <div class="home_intro_ct1">
+                    
+                    <h2>&num;PET CARE - GIỚI THIỆU TỔNG QUAN&num;</h2>
+                    <div class="main_center">
+                        <!--Slideshow-->
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="main_center d-block w-100"> <!--Khung về chính giữa-->
+                                    <div class="outstanding-box">
+                                        <div class="outstanding1-box"> </div>
+                                        <img src="./img/choratvuive.png" class="outstanding-dog">
+                                        <div class="outstanding2-box"> 
+                                            <img src="./img/dogvuivehaha.jpg" class="dogvuive1">
+                                            <img src="./img/dogvuivuihuhu.jpg" class="dogvuive2">
+                                            <img src="./img/dogvuivehihi.jpg" class="dogvuive3">
+                                        </div>
+                                        
+                                        <div class="outstanding-full-text">
+                                            <div><img src="./img/bestseller.png" class="bestseller"></div>
+                                            <div class="dogname">
+                                                Cún <b class="corgi">  Corgi </b>
+                                                <br> Siêu Đáng Yêu
+                                                <br> 
+                                                <div class="cost_dog"> <!--Text-->
+                                                    Giá sốc: <i class="cost"> 28.990.000đ </i> 25.490.000đ
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="contentdog_full">
+                                                <hr class="dog_hr">
+                                                <div class="content_dog">
+                                                    Corgi có ngoại hình đẹp, khả năng huấn luyện tốt, 
+                                                    <br>
+                                                    Đó là lí do Corgi trở thành sản phẩm được săn đón nhất năm 2022!!
+                                                    <div class="btn_home_more"> <a href="./shop_list6.html">MUA NGAY</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                
+                                <div class="main_center"> <!--Khung về chính giữa-->
+                                    <div class="outstanding-box2">
+                                        <div class="outstanding1-box2">
+                                            <img src="./img/bestseller.png" class="bestseller2">
+                                        </div>
+                                        <img src="./img/spnoibat.png" class="outstanding-long">
+                                        <div class="outstanding2-box2"> 
+                                            <div><pre>                  </pre></div>
+                                        <img src="./img/shop-details6.jpg" class="long1">
+                                        <img src="./img/shop-details5.jpg" class="long2">
+                                        </div>
+                                        
+                                        <div class="outstanding-full-text2">
+                                            
+                                            <div class="dogname2">
+                                                Lồng Vận Chuyển
+                                                <br> Chó Mèo
+                                                <br> 
+                                                <div class="cost_dog2"> <!--Text-->
+                                                    Giá sốc: <i class="cost2"> 1.200.000đ </i> 600.000đ
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="contentdog_full2">
+                                                <div class="content_dog2">
+                                                    Lồng vận chuyển hàng không cho chó mèo 
+                                                    <br>
+                                                    nhập khẩu có khả năng chịu được trọng lượng lớn!
+                                                    <div class="btn_home_more"> <a href="./shop_list6.html">MUA NGAY</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                
+                                <div class="main_center"> <!--Khung về chính giữa-->
+                                    <div class="outstanding-box3">
+                                        <div class="outstanding1-box3">
+                                            <img src="./img/bestseller.png" class="bestseller3">
+                                        </div>
+                                        <img src="./img/shop8-product7 - Copy.jpg" class="outstanding-sp">
+                                        <div class="outstanding2-box3"> 
+                                            <div><pre>                    </pre></div>
+                                            JERHIGH là một thương hiệu thức ăn cho mèo rất nổi tiếng trên thị trường hiện nay. Thức ăn của JERHIGH được sản xuất từ những nguyên liệu chất lượng cao, đảm bảo đáp ứng nhu cầu dinh dưỡng của mèo trong suốt quá trình phát triển và tăng trưởng.
+                                        </div>
+                                        
+                                        <div class="outstanding-full-text3">
+                                            
+                                            <div class="dogname3">
+                                                Bánh Cho Mèo
+                                                <br> Vị Cá Ngừ JERHIGH
+                                                <br> 
+                                                <div class="cost_dog3"> <!--Text-->
+                                                    Giá sốc: <i class="cost3"> 90.000đ </i> 45.000đ
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="contentdog_full3">
+                                                <div class="content_dog3">
+                                                    Lồng vận chuyển hàng không cho chó mèo 
+                                                    <br>
+                                                    nhập khẩu có khả năng chịu được trọng lượng lớn!
+                                                    <div class="btn_home_more"> <a href="./shop_list8.html">MUA NGAY</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="home_intro_block1">
+
+                        <div class="home_intro_b1_item">
+                            <div class="item_top">
+                                    <img src="./img/cut_home_1.png">
+                            </div>
+
+                            <div class="item_bottom">
+                                <div class="item_bottom_content">
+                                    <h3>Dịch vụ</h3>
+                                    <hr>
+                                    <p>Chúng tôi cung cấp các dịch vụ chăm sóc thú cưng như vệ sinh,
+                                        lưu trú, tiêm ngừa,...
+                                    </p>
+                                </div>
+                                <div class="btn_home_more"> <a href="./service.html">Đến Trang Ngay</a></div>
+                            </div>
+
+                        </div>
+
+                        <div class="home_intro_b1_item">
+                            <div class="item_top">
+                                    <img src="./img/home_pic1.jpg ">
+                            </div>
+
+                            <div class="item_bottom">
+                                <div class="item_bottom_content">
+                                    <h3>Pet Shop</h3>
+                                    <hr>
+                                    <p>Chúng tôi cung cấp các sản phẩm cho thú cưng, như quần áo, phụ kiện,..
+                                    </p>
+                                </div>
+                                <div class="btn_home_more"> <a href="./shop.html">Đến Trang Ngay</a></div>
+                            </div>
+
+                        </div>
+
+                        <div class="home_intro_b1_item">
+                            <div class="item_top">
+                                    <img src="./img/home_pic2.jpg">
+                            </div>
+
+                            <div class="item_bottom">
+                                <div class="item_bottom_content">
+                                    <h3>Đặt lịch</h3>
+                                    <hr>
+                                    <p>Đăng ký đặt lịch với chúng tôi để được tư vấn 
+                                        và chăm sóc thú cưng tốt nhất.
+                                    </p>
+                                </div>
+                                <div class="btn_home_more"> <a href="./datlich.html">Đến Trang Ngay</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Cam Kết-->
+                <div class="home_intro_ct2">
+                    <div class="home_intro_ct2_container">
+                        <div class="intro_ct2_left">
+                            <div class="intro_ct2_body_top">
+                                <h2>
+                                    &num;About Pet Care&num;
+                                </h2>
+                                <hr>
+                                <ul>
+                                    <li>Đến với PET CARE thú cưng của bạn sẽ được chăm sóc với những dịch vụ tốt nhất.</li>
+                                    <li>Các sản phẩm, phụ kiện chất lượng cao, có nguồn gốc rõ ràng.</li>
+                                    <li>Đội ngũ nhân viên tận tâm, chuyên nghiệp và kinh nghiệm.</li>
+                                </ul>
+                            </div>
+                            <div class="intro_ct2_body_bottom">
+                                <div class="about__checklist">
+                                    <span class="about__check-item">
+                                        Chứng nhận chuyên môn
+                                    </span>
+                                    <span class="about__check-item">
+                                        Yêu thương thú cưng
+                                    </span>
+                                    <span class="about__check-item">
+                                        20+ năm kinh nghiệm
+                                    </span>
+                                    <span class="about__check-item">
+                                        Đa dạng sản phẩm
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro_ct2_right">
+
+                            <div class="about__card">
+                                <b class="about__card-title">20+</b>
+                                <p class="about__card-desc">Năm kinh nghiệm</p>
+                                <img
+                                    src="./img/home_icondecor1.svg"
+                                    alt=""
+                                    class="about__card-decor"
+                                />
+                            </div>
+
+                            <div class="about__img-wrap">
+                                <img src="./img/home_pic3.png" class="about__img">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Thành Tích-->
+                <div class="home_intro_ct3">
+                    <div class="home_intro_ct3_container">
+                        <div class="home_intro_ct3_heading">
+                            <h2>&num;Thành Tích Đã Đạt Được&num;</h2>
+                            <hr>
+                        </div>
+                        <div class="achive">
+                            <div class="achive_item">
+                                <div class="achive_item_left">
+                                    <img src="./img/home_icon_costumer.png">
+                                </div>
+                                <div class="achive_item_right">
+                                    <div class="item_right_count">
+                                        <h3 class="counter" data-count="300000">0</h3>
+                                        <p>Khách hàng thành viên VIP</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="achive_item">
+                                <div class="achive_item_left">
+                                    <img src="./img/home_icon_product.png">
+                                </div>
+                                <div class="achive_item_right">
+                                    <div class="item_right_count">
+                                        <h3 class="counter" data-count="2000000">0</h3>
+                                        <p>Sản phẩm, phụ kiện đã bán</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="achive_item">
+                                <div class="achive_item_left">
+                                    <img src="./img/home_icon_services.png">
+                                </div>
+                                <div class="achive_item_right">
+                                    <div class="item_right_count">
+                                        <h3 class="counter" data-count="1500000">0</h3>
+                                        <p>Chú Pet đã sử dụng dịch vụ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!--Feedback-->
+                <div class="home_intro_ct4">
+                    <h2>&num;Feedback Của Khách Hàng&num;</h2>
+                    <hr>
+                    <div class="home_intro_ct4_container">
+                        <div class="home_btn_slider">
+                            <span class="btn_slider active"></span>
+                            <span class="btn_slider"></span>
+                            <span class="btn_slider"></span>
+                            <span class="btn_slider"></span>
+                        </div>
+                        <div class="home_intro_ct4_slider">
+                            <div class="slide-row" id="slider_FB">
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>Tôi trước đây đã đến rất nhiều cửa hàng về thú cưng rồi
+                                            nhưng chưa có nơi nào mà nhân viên tư vấn rất nhiệt tình và vui vẻ như dị.
+                                            <br> 
+                                            Đến với PET CARE thôi thực sự rất an tâm và hài lòng.
+                                            <br>
+                                            10 đỉm nhiaaaaa ❤️❤️❤️
+                                        </p>
+                                        <h3>-- BaoTran --</h3>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="./img/home_user1.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>Từ khi biết đến dịch vụ của PET CARE, Tùng đã không cần phải lo lắng về việc chăm sóc bé Chiko của mình nữa.
+                                            <br> 
+                                            Nhờ PET CARE mà Tùng biết dược rất nhiều kiến thức về chăm sóc thú cưng.
+                                            <br>
+                                            Mọi người hãy đưa pet của mình đến đây để trải nghiệm thử nhá 🌻🌻🌻
+                                        </p>
+                                        <h3>-- SonTungMTP --</h3>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="./img/home_user2.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>Được tư vấn tận tình, chăm sóc chuyên nghiệp, giá cả hợp lý, dịch vụ đa dạng, đặc biệt là nhân viên rất nhiệt tình và vui vẻ.
+                                            <br> 
+                                            Mình cảm nhận được Pet của mình khi được chăm sóc tại đây chúng rất thích thú và hạnh phúc.
+                                            <br>
+                                            PET CARE mãi đỉnh nhá ❤️❤️❤️
+                                        </p>
+                                        <h3>-- Triss --</h3>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="./img/home_user3.jpg">
+                                    </div>
+                                </div>
+    
+                                <div class="slide-col">
+                                    <div class="user-text">
+                                        <p>Bận rộn với công việc, không có thời gian chăm sóc thú cưng của mình 
+                                            nhưng với dịch vụ của PET CARE thì mình đã có thể yên tâm hơn rất nhiều.
+                                            <br> 
+                                            Mình thích nhất là có dịch vụ đặt lịch hẹn trước nên không cần phải đợi lâu nữa.
+                                            <br>
+                                            Mãi yêu PET CARE ❤️❤️❤️
+                                        </p>
+                                        <h3>-- MingWang --</h3>
+                                    </div>
+                                    <div class="user-img">
+                                        <img src="./img/home_user4.jpg">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--End Content-->
+            
+           <!-- Footer -->
+               <div id="footer"></div>
+        </article>
+            <!-- Content -->
+   
+    </div>               
+    
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        const counters = document.querySelectorAll(".counter");
+        let hasStartedCounting = false;
+      
+        window.addEventListener("scroll", () => {
+          const homeIntroCt3 = document.querySelector(".home_intro_ct3");
+          const rect = homeIntroCt3.getBoundingClientRect();
+      
+          if (!hasStartedCounting && rect.top <= window.innerHeight) {
+            hasStartedCounting = true;
+            counters.forEach(counter => startCounting(counter));
+          }
+        });
+      
+        function startCounting(counter) {
+          let initial_count = 0;
+          const final_count = counter.dataset.count;
+      
+          let counting = setInterval(updateCounting, 0.5);//15ms
+      
+          function updateCounting() {
+            if (initial_count < 1000) {
+              initial_count += 5;
+              counter.innerText = initial_count;
+            }
+      
+            if (initial_count >= 1000) {
+              initial_count += 100;
+              counter.innerText = (initial_count / 1000).toFixed(1) + "K+";
+            }
+      
+            if (initial_count >= 10000) {
+              initial_count += 5000;
+            }
+      
+            if (initial_count >= 1000000) {
+              initial_count += 500000;
+              counter.innerText = (initial_count / 1000000).toFixed(1) + "M+";
+            }
+      
+            if (initial_count >= final_count) {
+              clearInterval(counting);
+            }
+          }
+        }
+
+        var btnSliderFB = document.getElementsByClassName('btn_slider');
+        var sliderFB = document.getElementById('slider_FB');
+        var currentSlide = 0;
+        var autoSlideInterval = setInterval(autoSlide, 6000); // chuyển slide mỗi 5 giây
+
+        function autoSlide() {
+            currentSlide = (currentSlide + 1) % btnSliderFB.length; // tăng slide hiện tại lên 1, nếu vượt quá số slide thì trở lại slide đầu tiên
+            sliderFB.style.transform = 'translateX(-' + currentSlide*800 + 'px)';// thay đổi vị trí của slider theo chiều ngang: nhân với chiều rộng của 1 slide
+            for (var i = 0; i < btnSliderFB.length; i++) {
+                    btnSliderFB[i].classList.remove('active');
+                }
+                btnSliderFB[currentSlide].classList.add('active');// thêm class active cho nút chuyển slide tương ứng
+        }
+
+        for (var i = 0; i < btnSliderFB.length; i++) {
+            btnSliderFB[i].addEventListener('click', function() {
+            clearInterval(autoSlideInterval); // ngừng chuyển slide tự động
+            var slideIndex = Array.prototype.indexOf.call(btnSliderFB, this);
+            sliderFB.style.transform = 'translateX(-' + slideIndex*800 + 'px)';
+            for (var i = 0; i < btnSliderFB.length; i++) {
+                btnSliderFB[i].classList.remove('active');
+            }
+            this.classList.add('active');
+            currentSlide = slideIndex;
+            autoSlideInterval = setInterval(autoSlide, 6000); // bắt đầu tự động chuyển slide lại
+                }
+            );
+        }
+
+        const audio = new Audio();
+        audio.src = "./messenge_sound.mp3";
+
+        //khi hover vào icon messenge thì sẽ phát âm thanh
+        document.getElementById("messenge").addEventListener("mouseover", function(){
+            audio.play();
+        }
+        );
+      </script>
+      <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+</html>

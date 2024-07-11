@@ -1,0 +1,1686 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.spa_center{
+    display: flex;
+    justify-content: center;
+    text-shadow: none;
+}
+
+/*Headbar*/
+.click_a{
+    display: block;
+    width: 100%;
+}
+
+#spa_headbar {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;    
+    position: sticky;
+    z-index: 1;
+    justify-content: center;
+}
+
+#spa_headbar ul li {
+    list-style: none;
+}
+
+#spa_rows{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+   
+  }
+
+.box li {
+    width: 200px;
+    margin-top: 10px;
+    color:black;
+    list-style: none;
+    margin-left:2px;
+    text-align: center;
+    padding: 5px;
+    cursor: url('../img/pawprint.png'), auto;
+    transition: background-color 0.2s linear;
+    font-size: 20px;
+    font-weight: bold; 
+  }
+
+.box > li {
+    height: 50px;
+    padding: 0;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 50px;
+    cursor: url('../img/pawprint.png'), auto;
+}
+
+.box > li a{
+  color: black;
+}
+
+.box li:hover{
+    background-color: pink;
+  
+}
+
+#cha1 {
+  position: relative;
+  margin-left: 50px;
+}
+
+#cha1 .con1 {
+    position: absolute;
+    left: -1px;
+    top: 50px;
+    display: none;
+
+}
+#cha1:hover .con1 {
+  display: block;
+}
+
+/*Định dạng lại cấu trúc của con*/
+#cha1 > .con1 li {
+    width: 200px;
+    background-color: white;
+    margin-top: 2px;
+    height: 40px;
+    line-height: 30px;
+}
+
+#cha1 > .con1 li:hover{
+    background-color: pink;
+}
+
+#cha2{
+    position: relative;
+}
+
+#cha2 > .con2  li{
+    width: 200px;
+    background-color: white;
+    margin-top: 2px;
+}
+
+#cha2 .con2{
+position: absolute;
+    top: 50px;
+    left: -1px;
+    display: none;
+
+}
+#cha2:hover .con2{
+display: block;
+}
+
+#cha2 > .con2 li{
+  width: 200px;
+  background-color: white;
+  margin-top: 2px;
+  height: 40px;
+  line-height: 30px;
+}
+
+#cha2 > .con2 li:hover{
+background-color: pink;
+}
+
+#spa_input{
+  position: relative;
+  bottom: -5px;
+  border: 1px solid pink;
+  width: 200px;
+  height: 40px;
+  background-color: #ffa5b9;
+  border-radius: 5px; 
+}
+
+#spa_search{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 5px;
+  top: 10px;
+}
+
+#headbar_search{
+  width: 160px;
+  height: 30px;
+  border-radius: 5px;
+  color: whitesmoke;
+  border: none;
+  position: relative;
+  bottom: -4px;
+  left: 3px;
+
+}
+
+
+/*Poster*/
+.spa_poster{
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/pets-gaaacf9143_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#spa_poster_b{
+  padding-top: 50px;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px lightskyblue;
+   padding-left: 150px;
+   font-family: "Coiny", cursive;
+}
+
+#spa_poster_text{
+  line-height: 65px;
+  position: relative;
+  top: -320px;
+  font-size: 80px;
+  color: #a02424;
+  font-family: "Coiny", cursive;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding-top: 50px;
+}
+
+#spa_poster_text hr{
+    width: 300px;
+}
+
+#stay_poster_text2{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/*Content*/
+#spa_fix{
+    position: relative;
+    top: -265px;
+    width: 100%;
+    height: 100%;
+    font-family:  Arial;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#spa_pr_full{
+    width: 100%;
+    background-color: #fbeff1;
+}
+#spa_4chumeo{
+    height: 30px;
+    width: 80px;
+}
+#spa_header_border{
+    border: 3px dashed #a02424;
+    padding: 25px;
+    width : 70%;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+
+#spa_header1{
+    font-size: 35px;
+    color: #a02424 ;
+    position: relative;
+    bottom: -10px;
+}
+.spa_icon{
+    width : 50px;
+    height: 50px;
+    position: relative;
+    top: -15px;
+}
+
+.spa_hr{
+    width : 30%;
+    border: 1px solid #a02424;
+}
+
+#spa_text_header{
+  font-size: 15px;
+  color: black;
+}
+
+
+/*Phần thông tin chi tiết*/
+#spa_dauCao{
+    width: 50px;
+    height: 60px;
+    float: right;
+    position: relative;
+    top: -60px;
+    margin-right: 50px;
+}
+#spa_info_full{
+    width: 100%;
+    background-color: white;
+    border: 3px solid pink;
+    border-radius: 30px;
+}
+#spa_bongden{
+    width : 30px;
+    height: 50px;
+    position: relative;
+    top: -20px;
+}
+#spa_info_header{
+    font-size: 40px;
+    color: #a02424;
+    text-align: center;
+}
+#spa_info_head_hr{
+    width: 50%;
+    border: 1px solid green;
+    
+}
+#spa_meoDuDay{
+    width: 180px;
+    height: 50px;
+    position: relative;
+    top: -20px;
+}
+#spa_info_text1{
+    width: 450px;
+    text-align: right;
+    margin-right: 80px;
+}
+  
+#spa_info_text1 b{
+    font-size: 30px;
+    line-height: 35px;
+    color: #a02424;
+}
+#spa_info_text1 hr{
+    width: 30%;
+}
+#spa_info_text1 font{
+    font-size: 15px;
+}
+
+.spa_info_div_img{
+    width: 400px;
+}
+
+#spa_info_img1{
+    width: 360px;
+    height: 250px;
+    margin-right: 100px;
+    margin-left: -50px;
+}
+  
+#spa_info_text2{
+    width: 450px;
+    text-align: left;
+    margin-left: 80px;
+}
+#spa_info_text2 b{
+    font-size: 30px;
+    line-height: 35px;
+    color: #a02424;
+}
+#spa_info_text2 hr{
+    width: 30%;
+}
+#spa_info_text2 font{
+    font-size: 15px;
+}
+#spa_info_img2{
+    width: 360px;
+    height: 250px;
+    margin-left: 90px;
+}
+
+
+/*Phần bảng giá*/
+#spa_header{
+    font-size: 25px;
+    color: #a02424;
+    text-align: right;
+    line-height: 50px;
+    position: relative;
+    right: 20px;
+}
+#spa_icon_list{
+    width: 30px;
+    height: 30px;
+}
+#spa_cost_full{
+    background-color: white ;
+    border: solid pink 3px;
+    padding: 40px;;
+    border-radius: 15px ;
+}
+.spa_cost{
+  width: 300px;
+  height: 400px;
+  background-color: pink;
+  border-radius: 30px;
+  transition: all 0.8s;
+  cursor: url('../img/pawprint.png'), auto;
+  font-size: 15px;
+  color:#a02424;
+  padding-top: 50px;
+  padding-left: 20px;
+ 
+}
+
+.spa_cost:hover{
+  width: 300px;
+  height: 400px;
+  color: white;
+  background-color: palevioletred;
+  border-radius: 40px;
+  transform: scale(1.1);
+}
+#icon_cost_left{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -70px;
+    left: 80px;
+}
+
+.spa_cost_b{
+  font-size: 30px;
+  position: relative;
+  top: -50px;
+}
+.spa_cost_border{
+    width: 240px;
+    border: 2px dotted #a02424;
+  padding: 10px;
+  padding-bottom: 30px;
+  position: relative;
+  top: -40px;
+  left: 10px;
+  border-radius: 20px;
+  }
+  
+.spa_cost_font{
+  font-size: 18px;
+ 
+}
+.spa_cost_button{
+  width: 200px;
+  height: 30px;
+  background-color: palevioletred;
+ border-radius: 10px;;
+ border: 1px solid pink;
+ font-size: 18px;
+ color:#a02424;
+ cursor: url('../img/pawprint.png'), auto;
+}
+
+.spa_cost_button:hover{
+  background-color: white;
+  color: #a02424;
+  
+}
+
+/*Phần quảng cáo thương hiệu*/
+#spa_pr_tb{
+    width: 700px;
+    height: 70px;
+}
+.spa_pr_tb_b{
+    color: #a02424;
+    font-size: 45px;
+}
+#spa_pr_tb_div{
+    display: flex;
+    width: 100%;
+}
+#spa_pr_tb_div hr{
+    width: 1px;
+    height: 55px;
+    border: 2px solid #a02424;
+}
+  
+#spa_pr_tb_div b{
+    font-size: 30px;
+    text-align: left;
+    color: #a02424;
+    margin-left: 5px;
+    line-height: 30px;
+}
+  
+#spa_pr_d2_icon{
+    height: 25px;
+    width: 100%;
+}
+#spa_pr_d2_hr{
+    width: 50%;
+    border: 1px dashed #a02424;
+}
+#spa_pr_d2_font{
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+}
+    
+
+/*keyframes rung lắc*/
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+
+  
+  .box_datlich a {
+    width: 100px;
+    height: 50px;
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #a02424;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box_datlich a:hover {
+    /* background: #ffa5b9; */
+    animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+    color: palevioletred;
+    border: 1px solid lightgrey;
+    transform: scale(1.1) translateY(-5px); 
+    box-shadow: 0 0 15px grey;
+    cursor: url('../img/pawprint.png'), auto;
+  }
+
+
+
+
+  /*Những câu hỏi thường gặp*/
+
+.content_question{
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  #tieude_img{
+    width: 500px;
+    height: 230px;
+  }
+  
+  #tieude_text{
+    font-size: 25px;
+    color: darkgreen;
+    text-transform: uppercase;
+    position: relative;
+    top: -90px;
+  }
+  
+  .box_full{
+    padding: 10px 20px 10px 20px;
+  }
+  
+  #dogrthacmac{
+    margin: 20px 20px 20px 20px;
+  }
+  
+  #dogthacmac img{
+    width: 200px;
+    height: 150px;
+  }
+  
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .question_box{
+    border-radius: 10px;
+    background-color: pink;
+    height: 50px;
+    width: 700px;
+    padding:10px 20px 10px 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    color: black;
+  }
+  .question_box:hover {
+    cursor: url('../img/pawprint.png'), auto;
+    color: deeppink;
+  }
+  
+  .close_box{
+    width: 35px;
+    height: 20px;
+    cursor: url('../img/pawprint.png'), auto;
+    margin-left: 620px;
+  }
+  
+  
+  .anser_box{
+    display: none;
+    background-color: #fbeff1;
+    height: auto;
+    width: 700px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 15px;
+  
+  }
+
+  
+.service_hr_add{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .service_hr_add hr{
+    border: 2px solid #a02424;
+    width: 100px;
+    height: 0px;
+    position: relative;
+    top: 30px;
+  }
+  
+  .service_hr_add img{
+    width : 50px;
+    height: 40px;
+  }
+  
+  .box_pr_spa{
+    background-color: #fbeff1;
+    width: 100%;
+    border: 3px solid pink;
+    border-radius: 20px;
+  }
+
+  .spa_center1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .spa_nghieng{
+    font-size: 8px;
+    color: red;
+  }
+
+.cuchot{
+  font-size: 10px;
+  line-height: 15px;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media only screen and (max-width: 740px) {
+
+    /*Headbar*/
+    #spa_headbar {
+     width: 100%;
+     height: 20px;
+     margin-top: 30px;
+     background-color: white;
+     display: flex;    
+     position: sticky;
+     z-index: 1;
+     justify-content: center;
+   }
+ 
+ #spa_headbar ul li {
+     list-style: none;
+ }
+ 
+ #spa_rows{
+     width: 30%;
+     display: flex;
+     justify-content: none;
+ }
+ #spa_input{
+     display: none;
+   }
+ 
+   #headbar_search{
+  display: none;
+   
+   }
+   #stay_search{
+     width: 10px;
+   display: none;
+   }
+ 
+ 
+ 
+ .box{
+   height: 70px;
+     display: flex;
+     justify-content: none;
+     margin-left: -50px;
+   }
+ 
+ .box li {
+     width: 70px;
+     margin-top: -10px;
+     color:black;
+     
+     list-style: none;
+     margin-left:2px;
+     text-align: center;
+     padding: 5px;
+     cursor: url('../img/pawprint.png'), auto;
+     transition: background-color 0.2s linear;
+     font-size:0.313rem;
+     font-weight: bold; 
+     height: 20px;
+   }
+ 
+ .box > li {
+     height: 30px;
+     padding: 0;
+     margin-top: 0;
+     font-size: 0.438rem;
+     line-height: 20px;
+ }
+ .box > li a{
+     color: black;
+ }
+ .box li:hover{
+     background-color: pink;
+     height: 20px;
+ }
+ 
+ #cha1 {
+   position: relative;
+   margin-left: 30px;
+   font-family: Arial;
+ }
+ 
+ #cha1 .con1 {
+     position: absolute;
+     left: -1px;
+     top: 20px;
+     display: none;
+ 
+ }
+ 
+ #cha1:hover .con1 {
+   display: block;
+ }
+ 
+ /*Định dạng lại cấu trúc của con*/
+ #cha1 > .con1 li {
+     width: 70px;
+     font-size: 0.5rem;
+     background-color: white;
+     margin-top: 2px;
+     height: 20px;
+     line-height: 10px;
+     font-family: Arial;
+ }
+ 
+ #cha1 > .con1 li:hover{
+     background-color: pink;
+ }
+ 
+ #cha2{
+     position: relative;
+ }
+ 
+ #cha2 > .con2  li{
+     width: 100px;
+     background-color: white;
+     margin-top: 2px;
+     font-size: 0.5rem;
+ }
+ 
+ #cha2 .con2{
+ position: absolute;
+     top: 20px;
+     left: -1px;
+     display: none;
+ 
+ }
+ #cha2:hover .con2{
+ display: block;
+ }
+ 
+ #cha2 > .con2 li{
+   width: 70px;
+   background-color: white;
+   margin-top: 2px;
+   height: 20px;
+   line-height: 10px;
+ }
+
+
+
+  /*Poster*/
+.spa_poster{
+ height: 170px;
+}
+
+#spa_poster_b{
+ padding-top: 20px;
+ margin-top: 20px;
+ padding-left: 12px;
+}
+
+#spa_poster_text{
+ line-height: 20px;
+ position: relative;
+ top: -147px;
+ left: -6px;
+ font-size: 1.875rem;
+ width: 180px;
+ height: 75px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+ padding-top: 20px;
+ padding-bottom: 50px;
+}
+
+
+#spa_poster_text hr{
+ display: none;
+}
+
+#stay_poster_text2{
+ font-size: 0.375rem;
+ line-height: 10px;
+ text-align: center;
+
+}
+
+#stay_header{
+font-size: 10px;
+}
+
+/*Content*/
+#spa_fix{
+position: relative;
+top: -130px;
+width: 100%;
+height: 4000px;
+line-height: 8px;
+}
+#spa_4chumeo{
+height: 15px;
+width: 40px;
+position: relative;
+top: 10px;
+}
+#spa_header_border{
+border: 2px dashed #a02424;
+padding: 5px;
+border-radius: 10px;
+margin: auto;
+height: 50px;
+width: 80%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+#spa_header1{
+ font-size: 13px;
+ position: relative;
+ bottom: -5px;
+ 
+}
+
+.spa_icon{
+width : 15px;
+height: 15px;
+position: relative;
+top: 0px;
+}
+.spa_hr{
+ margin-top:5px;
+}
+#spa_text_header{
+ font-size: 8px;
+ margin-top: 5px;
+}
+
+/*Thong tin can biet*/
+#spa_info_full{
+ line-height: 8px;
+ border: 2px solid pink;
+ border-radius: 30px;
+}
+#spa_dauCao{
+ width: 15px;
+ height: 20px;
+ position: relative;
+ top: -20px;
+ margin-right: 50px;
+}
+
+#spa_info_header{
+ font-size: 12px;
+ padding-left: 15px;
+
+}
+#spa_bongden{
+ width : 15px;
+ height: 15px;
+ position: relative;
+ top: -4px;
+ left: 13px;
+}
+#spa_meoDuDay{
+ width: 70px;
+ height: 20px;
+ position: relative;
+ top:-7px;
+}
+.spa_center1{
+flex-direction: column;
+margin: 0px 40px 0px 40px;
+
+}
+
+#spa_info_text1{
+ width: 250px;
+ text-align: left;
+ margin-right: 0px;
+ margin: auto;
+}
+
+#spa_info_text1 b{
+ font-size: 13px;
+ line-height: 14px;
+}
+
+#spa_info_text1 p{
+ font-size: 8px;
+ text-align: justify;
+ line-height: 10px;
+ padding-top: 10px;
+}
+.spa_info_div_img{
+ width: 200px;
+}
+#spa_info_img1{
+display: none;
+
+
+}
+
+#spa_info_img2{
+display: none;
+}
+
+#spa_info_text2{
+ width: 250px;
+ text-align: left;
+ margin-right: 0px;
+ margin: auto;
+}
+#spa_info_text2 b{
+ font-size: 13px;
+ line-height: 14px;
+}
+
+#spa_info_text2 p{
+ font-size: 8px;
+ text-align: justify;
+ line-height: 10px;
+ padding-top: 10px;
+}
+
+/*Phần bảng giá*/
+#spa_header{
+ font-size: 7px;
+ text-align: left;
+ line-height: 15px;
+ padding-left: 30px;
+}
+#spa_header br{
+ display: none;
+}
+#spa_icon_list{
+display: none;
+}
+#spa_cost_full{
+ border: solid pink 2px;
+ border-radius: 15px ;
+}
+.spa_cost{
+ width: 192px;
+ height: 125px;
+ border-radius: 30px;
+ font-size: 8px;
+ padding-top: 50px;
+ padding-left: 20px;
+line-height: 10px;
+}
+.spa_cost:hover{
+ width: 110px;
+ height: 200px;
+ color: white;
+ background-color: palevioletred;
+ border-radius: 40px;
+ transform: scale(1.1);
+}
+#icon_cost_left{
+ width: 20px;
+ height: 20px;
+ position: relative;
+ top: -57px;
+ left: 70px;
+}
+.spa_cost_b{
+ font-size: 10px;
+ position: relative;
+ top: -60px;
+ left: -5px;
+}
+.spa_cost_border{
+   width: 140px;
+   height: 90px;
+   border: 2px dotted #a02424;
+ padding-left: 10px;
+ padding-bottom: 0px;
+ padding-top: -5px;
+ position: relative;
+ top: -65px;
+ left: 5px;
+ border-radius: 20px;
+ }
+
+ 
+ .spa_cost_font{
+   font-size: 8px;
+  
+ }
+ .spa_cost_button{
+   width: 50px;
+   height: 10px;
+  border-radius: 10px;;
+  font-size: 5px;
+ }
+ 
+ .box_datlich a {
+   width: 60px;
+   height: 15px;
+ 
+   margin: 5px auto;
+  
+   line-height: 10px;
+   font-size: 8px;
+ }
+
+ .spa_nghieng{
+   font-size: 8px;
+ }
+
+.cuchot{
+ font-size: 10px;
+ line-height: 15px;
+}
+
+
+/*cau hoi*/
+ 
+#tieude_img{
+ width: 20px;
+ height: 20px;
+}
+
+.question_box{
+ width: 250px;
+ height: 36px;
+ font-size: 10px;
+ padding:auto;
+ line-height: 12px;
+}
+
+.close_box{
+ width: 25px;
+ height: 15px;
+ margin-left: 180px;
+ font-size: 8px;
+}
+
+.anser_box{
+ font-size: 8px;
+ width: 250px;
+ height: auto;
+}
+
+
+.spa_pr_tb_b{
+ font-size: 15px;
+
+}
+#spa_pr_tb_div b{
+ font-size: 10px;
+ line-height: 13px;
+
+}
+
+#spa_pr_tb_div hr{
+ height: 25px;
+border: 1px solid #a02424;
+}
+#spa_pr_tb{
+ width: 400px;
+ height: 30px;
+ margin-left: 25px;
+}
+#spa_pr_d2_font{
+ font-size: 8px;
+ width: 200px;
+ line-height: 10px;
+ 
+}
+#spa_pr_d2_icon{
+ width: 50px;
+ height: 15px;
+}
+
+.service_hr_add{
+display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ipad mini*/
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+
+ /*Headbar*/
+ #spa_headbar {
+  width: 100%;
+  height: 20px;
+  margin-top: 60px;
+  background-color: white;
+  display: flex;    
+  position: sticky;
+  z-index: 1;
+  justify-content: center;
+}
+
+#spa_headbar ul li {
+  list-style: none;
+}
+
+#spa_rows{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+#spa_input{
+  display: none;
+}
+
+#headbar_search{
+display: none;
+
+}
+#stay_search{
+display: none;
+}
+
+
+
+.box{
+height: 70px;
+  display: flex;
+  justify-content: none;
+  margin-left: -50px;
+}
+
+.box li {
+  width: 150px;
+  margin-top: -10px;
+  color:black;
+  
+  list-style: none;
+  margin-left:2px;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold; 
+  height: 20px;
+}
+
+.box > li {
+  height: 30px;
+  padding: 0;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+.box > li a{
+  color: black;
+  font-size: 15px;
+}
+.box li:hover{
+  background-color: pink;
+  height: 20px;
+}
+
+#cha1 {
+position: relative;
+margin-left: 30px;
+font-family: Arial;
+}
+
+#cha1 .con1 {
+  position: absolute;
+  left: -1px;
+  top: 20px;
+  display: none;
+
+}
+
+#cha1:hover .con1 {
+display: block;
+}
+
+/*Định dạng lại cấu trúc của con*/
+#cha1 > .con1 li {
+  width: 150px;
+  font-size: 15px;
+  background-color: white;
+  margin-top: 2px;
+  height: 20px;
+  line-height: 10px;
+  font-family: Arial;
+}
+
+#cha1 > .con1 li:hover{
+  background-color: pink;
+}
+
+#cha2{
+  position: relative;
+}
+
+#cha2 > .con2  li{
+  width: 150px;
+  background-color: white;
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+#cha2 .con2{
+position: absolute;
+  top: 20px;
+  left: -1px;
+  display: none;
+
+}
+#cha2:hover .con2{
+display: block;
+}
+
+#cha2 > .con2 li{
+width: 150px;
+background-color: white;
+margin-top: 2px;
+height: 20px;
+line-height: 10px;
+}
+
+
+
+/*Poster*/
+.spa_poster{
+height: 230px;
+}
+
+#spa_poster_b{
+padding-top: 20px;
+margin-top: 20px;
+padding-left: 12px;
+}
+
+#spa_poster_text{
+line-height: 20px;
+position: relative;
+top: -178px;
+left: -17px;
+font-size: 60px;
+width: 350px;
+height: 110px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+padding-top: 35px;
+padding-bottom: 50px;
+}
+
+
+#spa_poster_text hr{
+display: none;
+}
+
+#stay_poster_text2{
+font-size: 13px;
+line-height: 10px;
+text-align: center;
+position: relative;
+top: 10px;
+
+}
+
+#stay_header{
+font-size: 10px;
+}
+
+/*Content*/
+#spa_fix{
+position: relative;
+top: -130px;
+width: 100%;
+height: 5000px;
+line-height: 8px;
+}
+#spa_4chumeo{
+height: 20px;
+width: 50px;
+position: relative;
+top: 10px;
+}
+#spa_header_border{
+border: 2px dashed #a02424;
+padding: 5px;
+border-radius: 10px;
+margin: auto;
+height: 70px;
+width: 75%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+#spa_header1{
+font-size: 30px;
+position: relative;
+bottom: -13px;
+
+}
+
+.spa_icon{
+width : 20px;
+height: 20px;
+position: relative;
+top: 6px;
+left: 10px;
+}
+.spa_hr{
+margin-top:15px;
+}
+#spa_text_header{
+font-size: 10px;
+margin-top: 5px;
+}
+
+/*Thong tin can biet*/
+#spa_info_full{
+line-height: 8px;
+border: 2px solid pink;
+border-radius: 30px;
+}
+#spa_dauCao{
+width: 30px;
+height: 30px;
+position: relative;
+top: -30px;
+margin-right: 50px;
+}
+
+#spa_info_header{
+font-size: 25px;
+padding-left: 15px;
+padding-top: 10px;
+
+}
+#spa_bongden{
+width : 20px;
+height: 20px;
+position: relative;
+top: 5px;
+left: 13px;
+}
+#spa_meoDuDay{
+width: 80px;
+height: 30px;
+position: relative;
+top:10px;
+}
+#spa_info_head_hr{
+ position: relative;
+ top: 20px;
+}
+
+#spa_info_text1{
+width: 300px;
+text-align: left;
+margin-right: 0px;
+margin: auto;
+}
+
+#spa_info_text1 b{
+font-size: 20px;
+line-height: 25px;
+}
+
+#spa_info_text1 p{
+font-size: 15px;
+text-align: justify;
+line-height: 20px;
+padding-top: 10px;
+}
+.spa_info_div_img{
+width: 300px;
+}
+#spa_info_img1{
+ width: 220px;
+ height: 200px;
+ margin-top: 30px;
+ margin-right: 100px;
+ margin-left: -50px;
+}
+
+#spa_info_text2{
+width: 300px;
+text-align: left;
+margin-right: 0px;
+margin: auto;
+}
+#spa_info_text2 b{
+font-size: 20px;
+line-height: 25px;
+padding-left: 10px;
+}
+
+#spa_info_text2 p{
+font-size: 15px;
+text-align: justify;
+line-height: 20px;
+padding-top: 10px;
+padding-left: 10px;
+}
+
+#spa_info_img2{
+ width: 220px;
+ height: 200px;
+ margin-left: 150px;
+ margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+/*Phần bảng giá*/
+#spa_header{
+font-size: 13px;
+text-align: left;
+line-height: 35px;
+padding-left: 30px;
+}
+
+#spa_header br{
+display: none;
+}
+#spa_icon_list{
+display: none;
+}
+#spa_cost_full{
+border: solid pink 2px;
+border-radius: 15px ;
+}
+.spa_cost{
+width: 225px;
+height: 295px;
+border-radius: 30px;
+font-size: 15px;
+padding-top: 50px;
+padding-left: 20px;
+line-height: 10px;
+}
+.spa_cost:hover{
+width: 235px;
+height:305px;
+color: white;
+background-color: palevioletred;
+border-radius: 40px;
+transform: scale(1.1);
+}
+#icon_cost_left{
+width: 40px;
+height: 40px;
+position: relative;
+top: -57px;
+left: 70px;
+}
+.spa_cost_b{
+font-size: 20px;
+position: relative;
+top: -35px;
+left: -5px;
+}
+.spa_cost_border{
+width: 165px;
+height:170px;
+border: 2px dotted #a02424;
+padding-left: 10px;
+padding-bottom: 0px;
+padding-top: -5px;
+position: relative;
+top: -25px;
+left: 5px;
+border-radius: 20px;
+line-height: 20px;
+}
+
+
+.spa_cost_font{
+font-size: 13px;
+
+}
+.spa_cost_button{
+width: 50px;
+height: 10px;
+border-radius: 10px;;
+font-size: 15px;
+}
+
+.box_datlich a br{
+ display: none;
+}
+
+.box_datlich a {
+width: 60px;
+height: 30px;
+padding-top: 10px;
+margin-top: 20px;
+
+line-height: 10px;
+font-size: 10px;
+}
+
+.spa_nghieng{
+font-size: 10px;
+}
+
+.cuchot{
+font-size: 15px;
+line-height: 20px;
+}
+
+
+/*cau hoi*/
+
+#tieude_img{
+width: 20px;
+height: 20px;
+}
+
+.question_box{
+width: 550px;
+height: 36px;
+font-size: 15px;
+padding:auto;
+line-height: 20px;
+}
+
+.close_box{
+width: 30px;
+height: 20px;
+margin-left: 470px;
+font-size: 10px;
+}
+
+.anser_box{
+font-size: 13px;
+width: 550px;
+line-height: 18px;
+height: auto;
+}
+
+
+
+
+.spa_pr_tb_b{
+font-size: 30px;
+
+}
+#spa_pr_tb_div b{
+font-size: 25px;
+line-height: 30px;
+
+}
+
+#spa_pr_tb_div hr{
+height: 55px;
+border: 2px solid #a02424;
+}
+#spa_pr_tb{
+width: 550px;
+height: 30px;
+margin-left: 25px;
+}
+#spa_pr_d2_font{
+font-size: 15px;
+width: 400px;
+line-height: 20px;
+
+}
+#spa_pr_d2_icon{
+width: 50px;
+height: 15px;
+}
+
+.service_hr_add{
+display: none;
+}
+
+}

@@ -1,0 +1,2528 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*HEADBAR*/
+.main_center{
+  display: flex;
+  justify-content: center;
+}
+
+.headbar{
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #ffa5b9;
+}
+
+.headfull_text{
+  position: relative;
+  top: 6px;
+  display: flex;
+}
+
+.logo_text_petcare0{
+  font-size: 25px;
+  position: relative;
+  left: 150px;
+  display: flex;
+  font-family: "Coiny", cursive;
+}
+
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.logo_text_petcare1{
+  text-shadow: 2px 2px 4px lightsteelblue;
+ color: white;
+ font-size: 25px;
+}
+
+.logo_text_petcare2{
+  color: lightslategray;
+  font-family: "Coiny", cursive;
+ font-size: 13px;
+ position: relative;
+ left: -120px;
+ top: 30px;
+}
+
+.logo_text2_petcare{
+  color: white;
+  font-size: 15px;
+  padding-left: 50px;
+  position: relative;
+  top: 13px;
+
+}
+
+
+.iconmini{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.text3_head{
+  font-size: 13px;
+  display: flex;
+  color: white;
+  position: relative;
+  left: 150px;
+}
+
+.icon_headbar_phone{
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.login_full{
+  position: relative;
+  left: 150px;
+}
+
+
+.login_img{
+  width: 27x;
+  height: 27px;
+  margin-left: 60px;
+}
+
+.login_text{
+  font-size: 13px;
+  color: white;
+  padding-top: 1px;
+  padding-left: 20px;
+}
+
+
+/*END- HEADBAR*/
+
+
+
+
+.service_center{
+  display: flex;
+  justify-content: center;
+}
+.headbar{
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #ffa5b9;
+}
+
+.headbar .logo{
+  padding-left: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+.headbar .login{
+  z-index: 999;
+  width: 120px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  color: #d4d4d4;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-left: 87%;
+  margin-top: 10px;
+  transition: .5s;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 15%;
+  height: 100%;
+  background: #ffa5b9;
+  transition: all .5s ease;
+}
+/*Định dạng phần đầu sidebar*/
+.sidebar header {
+  padding-top: 80px;
+  z-index: 99999;
+  font-size: 22px;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+  background: #ffa5b9;
+  user-select: none;
+}
+/*Định dạng thẻ a sidebar*/
+.sidebar .sidebar-nav a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  border-top: 1px solid rgba(221, 221, 221, 0.1);
+  transition: .4s;
+}
+/*Animation lúc hover chuột vào các thẻ a (con của ul>li)*/
+.sidebar-nav li:hover a{
+  padding-left: 50px; /*Lùi ra 50px*/
+  background: #d4d4d4;
+  color:black;
+  border-radius: 20px;
+}
+.sidebar .sidebar-nav a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+/*Định dạng của nút*/
+/* label #btn{
+  position: fixed;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+} */
+/*Nút mở*/
+label #btn{
+  z-index: 1111;
+  position: fixed;
+  background: #ffa5b9;
+  border-radius: 3px;
+  cursor: pointer;
+  left: 0px;
+  top: 0;
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  padding: 6px 12px;
+  transition: all .5s;
+}
+/*Khi click vào sẽ -> đến sidebar*/
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  z-index: 9999;
+  top: 10px;
+  left: 82.5px;
+  font-size: 44px;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background:  #FFA5B9;
+  height: 30px;
+  transition: all .5s;
+}
+
+
+#check:checked ~ article{
+  margin-left: 200px;
+}
+
+article{
+  transition: all .5s;
+}
+
+.gotopbtn{
+  z-index: 9999;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+	border-radius: 50%;
+  border: 2px solid rgba(39, 39, 39, 0.5);
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center; 
+  line-height:50px;
+  color: rgb(49, 49, 49);
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CỦA MỊ*/
+.click_a{
+  display: block;
+  width: 100%;
+}
+#stay_headbar {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  background-color: white;
+  display: flex;    
+  position: sticky;
+  z-index: 1;
+  justify-content: center;
+}
+
+#stay_headbar ul li {
+  list-style: none;
+}
+
+#stay_rows{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box li {
+  width: 200px;
+  margin-top: 10px;
+  color:black;
+  
+  list-style: none;
+  margin-left:2px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: url('../img/pawprint.png'), auto; 
+}
+
+.box > li {
+  height: 50px;
+  padding: 0;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 50px;
+}
+.box > li a{
+  color: black;
+  cursor: url('../img/pawprint.png'), auto;
+}
+.box li:hover{
+  background-color: pink;
+  
+
+}
+
+#cha1 {
+position: relative;
+margin-left: 50px;
+}
+
+#cha1 .con1 {
+  position: absolute;
+  left: -1px;
+  top: 50px;
+  display: none;
+
+}
+#cha1:hover .con1 {
+display: block;
+}
+
+/*Định dạng lại cấu trúc của con*/
+#cha1 > .con1 li {
+  width: 200px;
+  background-color: white;
+  margin-top: 2px;
+  height: 40px;
+  line-height: 30px;
+  cursor: url('../img/pawprint.png'), auto;
+}
+
+#cha1 > .con1 li:hover{
+  background-color: pink;
+
+}
+
+#cha2{
+  position: relative;
+}
+
+#cha2 > .con2  li{
+  width: 200px;
+  background-color: white;
+  margin-top: 2px;
+}
+
+#cha2 .con2{
+position: absolute;
+  top: 50px;
+  left: -1px;
+  display: none;
+
+}
+#cha2:hover .con2{
+display: block;
+}
+
+#cha2 > .con2 li{
+width: 200px;
+background-color: white;
+margin-top: 2px;
+height: 40px;
+line-height: 30px;
+}
+
+#cha2 > .con2 li:hover{
+background-color: pink;
+}
+#spa_input{
+position: relative;
+bottom: -5px;
+border: 1px solid pink;
+width: 200px;
+height: 40px;
+background-color: #ffa5b9;
+border-radius: 5px; 
+}
+#spa_search{
+width: 20px;
+height: 20px;
+position: relative;
+left: 5px;
+top: 10px;
+
+
+}
+#headbar_search{
+width: 160px;
+height: 30px;
+border-radius: 5px;
+color: whitesmoke;
+border: none;
+position: relative;
+bottom: -4px;
+left: 3px;
+
+}
+
+#cha1 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#cha1 ul li a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#cha2 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#cha2 ul li a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.box > li a {
+  text-decoration: none;
+}
+/*Poster*/
+.spa_poster{
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/posterService.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#spa_poster_b{
+padding-top: 50px;
+margin-top: 50px;
+text-shadow: 2px 2px 4px lightskyblue;
+ padding-left: 150px;
+ font-family: "Coiny", cursive;
+}
+
+#spa_poster_text{
+line-height: 65px;
+position: relative;
+top: -320px;
+font-size: 80px;
+color: PaleVioletRed;
+background-color: rgba(255, 255, 255, 0.5);
+width: 700px;
+height: 200px;
+margin-top: 40px;
+margin-bottom: 20px;
+border-radius: 30px;
+padding-top: 40px;
+}
+
+#spa_poster_text hr{
+  width: 300px;
+}
+.spa_center b{
+text-shadow: 2px 2px 4px lightskyblue;
+}
+
+#stay_poster_text2{
+  font-size: 20px;
+  line-height: 20px;
+}
+
+
+.service{
+  display: flex;
+  justify-content: center;
+}
+
+#service_main{
+  width: 100%;
+  margin: auto;
+  font-family:  Arial;
+  line-height: 25px;
+  position: relative;
+  top: -250px;
+}
+
+
+
+/*Poster*/
+.service_pr_image{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+.service-pr-h1{
+  font-size: 40px;
+  color: darkgreen;
+}
+
+#service_meo4chu{
+  width: 120px;
+  height: 50px;
+}
+
+
+.service-pr-hr{
+  border-style: dashed;
+  border-color: #ffa5b9;
+  width: 50%;
+
+}
+#service-pr-i{
+  font-size: 20px;
+  text-align: center;
+  color: darkgreen;
+  
+}
+
+/*MODEL*/
+.service1{
+  display: flex;
+  justify-content: center;
+}
+
+#service_model1{
+  border: 3px solid black;
+  width: 100%;
+  background-color: #fbf0f4;
+}
+.service_modelStay{
+  color: black;
+  border-radius: 80px;
+  height: 350px;
+  width: 25%;
+  background: #bee08c;
+  box-shadow: 5px 5px 5px green; 
+  transition: all 0.8s;
+  
+}
+
+.service_modelStay:hover{
+  transform: scale(1.1);
+}
+#service_modelStay_b{
+  font-size: 35px;
+  color: forestgreen;
+}
+.service_modelStay div{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right:20px;
+  font-size: 15px;
+  text-align: justify;
+}
+.service_modelStay button{
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: forestgreen;
+  border: none;
+  color: black;
+}
+
+.service_modelStay button:hover{
+  border: green 1px solid;
+  cursor: url('../img/pawprint.png'), auto; /*Con chuột thành bàn tay khi rê qua */
+}
+
+
+
+.service_modelMedicine{
+  align-self: center;
+  color: black;
+  background: #f7b7c7;
+  border-radius: 80px;
+  height: 350px;
+  width: 25%;
+  margin-left: 60px;
+  box-shadow: 5px 5px 5px deeppink; 
+  transition: all 0.8s;
+  
+}
+
+.service_modelMedicine:hover{
+  transform: scale(1.1);
+}
+.service_modelMedicine b{
+  text-align: justify;
+  font-size: 35px;
+  color: deeppink;
+  text-align: center;
+}
+.service_modelMedicine div{
+  text-align: justify;
+  padding: 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.service_modelMedicine button{
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: deeppink;
+  border: none;
+  color: black;
+}
+
+
+.service_modelMedicine button:hover{
+  border: deeppink 1px solid;
+  cursor: pointer; /*Con chuột thành bàn tay khi rê qua */
+}
+
+
+
+.service_modelClean{
+  color: black;
+  border-radius: 80px;
+  height: 350px;
+  width: 25%;
+  background: #efd0a4;
+  margin-left: 60px;
+  box-shadow: 5px 5px 5px orangered;
+ transition: all 0.8s;
+}
+.service_modelClean:hover{
+  transform: scale(1.1);
+}
+.service_modelClean b{
+  text-align: justify;
+  font-size: 35px;
+  color: orangered;
+  text-align: center;
+}
+.service_modelClean div{
+  text-align:justify;
+  padding: 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.service_modelClean button{
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: orangered;
+  border: none;
+  color: black;
+}
+
+
+.service_modelMedicine button:hover{
+  border: orangered 1px solid;
+  cursor: url('../img/pawprint.png'), auto; /*Con chuột thành bàn tay khi rê qua */
+}
+
+
+
+
+
+/*Thông tin chung về các loại hình dịch vụ*/
+.service_preview{
+  width: 100%;
+  height: 500px;
+  background-color: #FDF4F5;
+  padding-top: 50px;
+}
+#service_head{
+  margin-left: 100px;
+}
+
+#service_preview_b{
+  font-size: 60px;
+  color: darkgreen;
+
+}
+#service_preview_font{
+  font-size: 40px;
+  color: darkgreen;
+ 
+ 
+}
+#service_preview_i{
+  font-size: 18px;
+  color: darkgreen;
+  text-align: justify;
+  padding-left: 20px;
+
+  
+}
+
+#service_meo{
+  width: 400px;
+  height: 280px;
+}
+
+#service_preview_hr1{
+  width: 80%;
+  border: 2px solid green;
+        
+}
+#service_preview_hr2{
+  height: 250px;
+  width: 0px; 
+  border: 2px solid green; 
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+
+
+.service_model_header{
+    color: darkgreen;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    
+}
+
+.service_hr_add{
+  display: flex;
+  justify-content: center;
+}
+
+.service_hr_add hr{
+  border: 2px solid green;
+  width: 100px;
+  height: 0px;
+  position: relative;
+  top: 30px;
+}
+
+.service_hr_add img{
+  width : 50px;
+  height: 40px;
+}
+
+/*Nội dung chung về lưu trú*/
+.service_row1{
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  
+}
+
+
+#Service_Info{
+  width: 100%;
+  height: 700px;
+  background:white ;
+  /*background:#eaf6d7;*/
+}
+
+.service_bg2_img img{
+  width: 400px;
+  height: 450px;
+ 
+}
+
+.Service_Info_text{
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #DDF7E3;
+  width: 600px;
+  height: 450px;
+  text-align: justify;
+
+}
+
+.texts{
+  text-align: justify;
+  font-size: 15px;
+
+}
+
+.truycapnhanh{
+  background-color: #B3E5BE;
+  color: palevioletred;
+  text-shadow: 2px 2px 4px white;
+  font-weight: bold;
+  width: 1000px;
+  height: 80px;
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+  border: 3px dashed pink;
+  border-radius: 20px;
+
+}
+
+#Service_Info_text_b{
+  text-align: center;
+  color: darkgreen;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+
+.button_service{
+  width: 150px;
+  height: 30px;
+  cursor: url('../img/pawprint.png'), auto;
+  background-color: green;
+  border: none;
+}
+
+
+
+
+.Service_Info img{
+  width: 350px;
+  height: 340px;
+  position: relative;
+  left: 25px;
+  bottom: -5px;
+  top: 3px;
+ 
+  
+}
+
+
+
+.Service_Info_img{
+  width: 400px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.Service_Info_img2{
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  position: relative;
+  bottom: -50px;
+}
+
+.Service_Info_text_button{
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: forestgreen;
+  border: none;
+  color: black;
+  transition: all 0.8s;
+}
+
+.Service_Info_text_button:hover{
+  cursor: url('../img/pawprint.png'), auto;/*Con chuột thành bàn tay khi rê qua */
+  box-shadow: 5px 5px 5px yellowgreen;
+
+}
+
+
+
+
+/*Nội dung chung về thú y*/
+.service2_row1{
+  display: flex;
+  width: 1100px;
+  height: 650px;
+  border: 1px solid red;
+}
+
+.service2_bg1{
+  background-color: #B3E5BE;
+  position: relative;
+  top: 80px;
+  right: -230px;
+  width: 250px;
+  height: 500px;
+  border-radius: 30px;
+  z-index: 1;
+  
+}
+
+.service2_bg2_img img{
+  position: absolute;
+  left: 600px;
+  z-index: 2;
+  width: 400px;
+  height: 450px;
+  border-radius: 30px;
+}
+
+.Service2_Info_text{
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #DDF7E3;
+  width: 620px;
+  height: 550px;
+  margin-top: 70px;
+  z-index: 3;
+  text-align: justify;
+  border-radius: 30px;
+}
+
+.texts2{
+  text-align: justify;
+  font-size: 15px;
+
+}
+
+
+
+
+
+#Service_InfoMedi{
+  width: 100%;
+  height: 340px;
+  /*background: #fbf0f4;*/
+  background:white ;
+}
+#Service_InfoMedi_img{
+  width: 400px;
+  height: 300px;
+  padding-left: 50px;
+}
+.Service_InfoMedi_text{
+
+  text-align: justify;
+  padding-left: 70px;
+  padding-right: 70px;
+  color: darkgreen;
+  font-size: 18px;
+  
+}
+#Service_InfoMedi_text_b{
+  color: darkgreen;
+  font-size: 35px;
+  
+}
+.Service_InfoMedi_text_button{
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: forestgreen;
+  border: none;
+  color: black;
+  transition: all 0.8s;
+}
+
+.Service_InfoMedi_text_button:hover{
+  cursor: url('../img/pawprint.png'), auto; /*Con chuột thành bàn tay khi rê qua */
+  box-shadow: 5px 5px 5px yellowgreen
+
+}
+
+
+
+/*Nội dung chung về spa thú cưng*/
+#Service_InfoSpa{
+  width: 100%;
+  height: 350px;
+  background:#E6F1D8;
+}
+.Service_InfoSpa_img{
+  width: 270px;
+  height: 260px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+#Service_InfoSpa_text{
+  text-align: justify;
+  color: darkgreen;
+  font-size: 18px;
+  
+}
+#Service_InfoSpa_text_b{
+  
+  text-align: center;
+  padding-left: 20px;
+  color: darkgreen;
+  font-size: 35px;
+  
+}
+.Service_InfoSpa_text_button{
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: forestgreen;
+  border: none;
+  color: black;
+  margin-left: 40px;
+  transition: all 0.8s;
+}
+
+.Service_InfoSpa_text_button:hover{
+  cursor: url('../img/pawprint.png'), auto;/*Con chuột thành bàn tay khi rê qua */
+  box-shadow: 5px 5px 5px yellowgreen
+
+}
+/*keyframes rung lắc*/
+@keyframes shake {
+  0% {
+      transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+      transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+      transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+      transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.btn_home_more{
+  margin-top: -20px;
+  margin-left: 20px;
+}
+.service-mini a{
+  width: 200px;
+  height: 100px;
+  background: palevioletred;
+  text-shadow: 2px 2px 4px white;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.service-mini a:hover{
+  animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+  color: white;
+  border: 1px solid lightgrey;
+  transform: scale(1.1) translateY(-5px); 
+  box-shadow: 0 0 15px grey;
+  cursor: url('../img/pawprint.png'), auto;
+}
+
+.btn_home_more a {
+  width: 200px;
+  height: 50px;
+  background: palevioletred;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_home_more a:hover {
+  /* background: #ffa5b9; */
+  animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+  color: white;
+  border: 1px solid lightgrey;
+  transform: scale(1.1) translateY(-5px); 
+  box-shadow: 0 0 15px grey;
+  cursor: url('../img/pawprint.png'), auto;
+}
+
+
+
+.spa_more a {
+  width: 100px;
+  height: 50px;
+  background: orange;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.spa_more a:hover {
+  /* background: #ffa5b9; */
+  animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+  color: white;
+  border: 1px solid lightgrey;
+  transform: scale(1.1) translateY(-5px); 
+  box-shadow: 0 0 15px grey;
+  cursor: url('../img/pawprint.png'), auto;
+}
+
+.stay_more a {
+  width: 100px;
+  height: 50px;
+  background: green;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.stay_more a:hover {
+  /* background: #ffa5b9; */
+  animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+  color: white;
+  border: 1px solid lightgrey;
+  transform: scale(1.1) translateY(-5px); 
+  box-shadow: 0 0 15px grey;
+  cursor: url('../img/pawprint.png'), auto;
+}
+
+
+.medicine_more a {
+  width: 100px;
+  height: 50px;
+  background: deeppink;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.medicine_more a:hover {
+  /* background: #ffa5b9; */
+  animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+  color: white;
+  border: 1px solid lightgrey;
+  transform: scale(1.1) translateY(-5px); 
+  box-shadow: 0 0 15px grey;
+  cursor: url('../img/pawprint.png'), auto;
+}
+
+
+/*Phần quảng cáo thương hiệu*/
+#spa_pr_tb{
+  width: 700px;
+  height: 70px;
+}
+.spa_pr_tb_b{
+  color: darkgreen;
+  font-size: 45px;
+}
+#spa_pr_tb_div{
+  display: flex;
+  width: 100%;
+}
+#spa_pr_tb_div hr{
+  width: 1px;
+  height: 55px;
+  border: 2px solid darkgreen;
+}
+
+#spa_pr_tb_div b{
+  font-size: 30px;
+  text-align: left;
+  color: darkgreen;
+  margin-left: 5px;
+  line-height: 30px;
+}
+
+#spa_pr_d2_icon{
+  height: 25px;
+  width: 100%;
+}
+#spa_pr_d2_hr{
+  width: 50%;
+  border: 1px dashed darkgreen;
+}
+
+#spa_pr_d2_font{
+  font-size: 15px;
+  width: 500px;
+  text-align: center;
+}
+
+.spa_center{
+  display: flex;
+  justify-content: center;
+}
+
+#color{
+  background-color: #FFE5F1;
+  border: 1px solid #bee08c;
+  width: 100%;
+  border-radius: 10px;
+  height: 250px;
+}
+
+
+/*Những câu hỏi thường gặp*/
+
+.content_question{
+
+  display: flex;
+  justify-content: center;
+}
+
+#tieude_img{
+  width: 500px;
+  height: 230px;
+}
+
+#tieude_text{
+  font-size: 25px;
+  color: darkgreen;
+  text-transform: uppercase;
+  position: relative;
+  top: -90px;
+}
+
+.box_full{
+  padding: 10px 20px 10px 20px;
+}
+
+#dogrthacmac{
+  margin: 20px 20px 20px 20px;
+}
+
+#dogthacmac img{
+  width: 200px;
+  height: 150px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.question_box{
+  border-radius: 10px;
+  background-color: #B3E5BE;
+  height: 50px;
+  width: 700px;
+  padding:10px 20px 10px 20px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.question_box:hover {
+  cursor: url('../img/pawprint.png'), auto;
+  color: green;
+}
+
+.close_box{
+  width: 35px;
+  height: 20px;
+  cursor: url('../img/pawprint.png'), auto;
+  margin-left: 620px;
+}
+
+
+.anser_box{
+  display: none;
+  background-color: #DDF7E3;
+  height: auto;
+  width: 700px;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*iphone SE XR*/
+
+@media screen and (max-width: 576px) {
+
+  /*Headbar*/
+  #stay_headbar {
+   width: 100%;
+   height: 20px;
+   margin-top: 30px;
+   background-color: white;
+   display: flex;    
+   position: sticky;
+   z-index: 1;
+   justify-content: center;
+ }
+
+#stay_headbar ul li {
+   list-style: none;
+}
+
+#stay_rows{
+   width: 30%;
+   display: flex;
+   justify-content: none;
+   
+}
+#spa_input{
+   display: none;
+ }
+
+ #headbar_search{
+display: none;
+ 
+ }
+ #spa_search{
+   width: 10px;
+ display: none;
+ }
+
+
+
+.box{
+ height: 30px;
+   display: flex;
+   justify-content: none;
+   margin-left: -50px;
+ }
+
+.box li {
+   width: 70px;
+   margin-top: -10px;
+   color:black;
+   
+   list-style: none;
+   margin-left:2px;
+   text-align: center;
+   padding: 5px;
+   cursor: url('./img/pawprint.png'), auto;
+   transition: background-color 0.2s linear;
+   font-size:11px;
+   height: 20px;
+ }
+
+.box > li {
+   height: 30px;
+   padding: 0;
+   margin-top: 0;
+   font-size: 0.438rem;
+   line-height: 20px;
+}
+.box > li a{
+   color: black;
+}
+.box li:hover{
+   background-color: pink;
+   height: 20px;
+}
+
+#cha1 {
+ position: relative;
+ margin-left: 30px;
+ font-family: Arial;
+}
+
+#cha1 .con1 {
+   position: absolute;
+   left: -1px;
+   top: 20px;
+   display: none;
+
+}
+
+#cha1:hover .con1 {
+ display: block;
+}
+
+/*Định dạng lại cấu trúc của con*/
+#cha1 > .con1 li {
+   width: 70px;
+   font-size: 0.5rem;
+   background-color: white;
+   margin-top: 2px;
+   height: 20px;
+   line-height: 10px;
+   font-family: Arial;
+}
+
+#cha1 > .con1 li:hover{
+   background-color: pink;
+}
+
+#cha2{
+   position: relative;
+}
+
+#cha2 > .con2  li{
+   width: 100px;
+   background-color: white;
+   margin-top: 2px;
+   font-size: 0.5rem;
+}
+
+#cha2 .con2{
+position: absolute;
+   top: 20px;
+   left: -1px;
+   display: none;
+
+}
+#cha2:hover .con2{
+display: block;
+}
+
+#cha2 > .con2 li{
+ width: 70px;
+ background-color: white;
+ margin-top: 2px;
+ height: 20px;
+ line-height: 10px;
+}
+
+
+
+/*Poster*/
+.spa_poster{
+  height: 180px;
+}
+#spa_poster_b{
+  padding-top: 50px;
+  margin-top: 50px;
+   padding-left: 43px;
+ 
+  }
+  #spa_poster_text{
+    line-height: 65px;
+    position: relative;
+    top: -175px;
+    font-size: 40px;
+    width: 300px;
+    height: 90px;
+    border-radius: 20px;
+    padding-top: 0px;
+    
+    }
+    #spa_poster_text hr{
+      width: 100px;
+      position: relative;
+      top: -10px;
+    }
+    
+    #stay_poster_text2{
+      font-size: 10px;
+      line-height: 10px;
+      position: relative;
+      top: -10px;
+      text-align: center;
+    }
+
+    #service_main{
+      width: 100%;
+      height: 4000px;
+      margin: auto;
+      font-family:  Arial;
+      line-height: 15px;
+      position: relative;
+      top: -150px;
+    }
+
+
+    .service-pr-h1{
+      font-size: 20px;
+    }
+
+    #service_meo4chu{
+      width: 50px;
+      height: 20px;
+    }
+
+    #service-pr-i{
+      font-size: 10px;
+      
+    }
+
+    .service1{
+      flex-direction: column;
+    }
+
+    .service_modelStay{
+    
+      border-radius: 30px;
+      height: 180px;
+      width: 70%;
+      margin: auto;
+     
+    }
+    .service_modelStay div{
+      padding: 10px;
+      padding-left: 20px;
+      padding-right:20px;
+      font-size: 10px;
+    }
+
+    #service_modelStay_b{
+      font-size: 15px;
+    }
+
+    .stay_more a {
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      line-height: 20px;
+      font-size: 10px;
+      margin-top: -15px;
+      padding-top: 5px;
+    }
+    
+    .service_modelMedicine{
+      border-radius: 30px;
+      height: 180px;
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .service_modelMedicine b{
+      font-size: 15px;
+    }
+    .service_modelMedicine div{
+      padding: 10px;
+      padding-left: 20px;
+      padding-right:20px;
+      font-size: 10px;
+      
+    }
+    .medicine_more a {
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      line-height: 20px;
+      font-size: 10px;
+      margin-top: -15px;
+      padding-top: 5px;
+    }
+
+
+    .service_modelClean{
+      border-radius: 30px;
+      height: 180px;
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .service_modelClean b{
+      font-size: 15px;
+    }
+    .service_modelClean div{
+      padding: 10px;
+      padding-left: 20px;
+      padding-right:20px;
+      font-size: 10px;
+      
+    }
+    .spa_more a {
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      line-height: 20px;
+      font-size: 10px;
+      margin-top: -15px;
+      padding-top: 5px;
+    }
+
+/*Thông tin chung về các loại hình dịch vụ*/
+.service_preview{
+  height: 320px;
+  padding-top: 50px;
+}
+#service_head{
+  margin-left: 10px;
+  line-height: 10px;
+}
+
+#service_preview_b{
+  font-size: 25px;
+
+
+}
+#service_preview_font{
+  font-size: 15px;
+
+}
+
+#service_preview_i{
+  font-size: 10px;
+  color: darkgreen;
+  text-align: justify;
+  padding-left: 0px;
+  width: 100%;
+padding-right: -30px;
+  
+}
+
+#service_meo{
+  width: 130px;
+  height: 130px;
+  margin-left: -20px;
+}
+
+#service_preview_hr1{
+  width: 80%;
+  border: 1px solid green;
+        
+}
+#service_preview_hr2{
+  height: 150px;
+  width: 0px; 
+  border: 1px solid green; 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+.service_model_header{
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 80%;
+  
+}
+
+
+
+/*Nội dung chung về lưu trú*/
+.service_row1{
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  
+}
+
+
+#Service_Info{
+  width: 100%;
+  height: 700px;
+  background:white ;
+  /*background:#eaf6d7;*/
+}
+
+.service_bg2_img img{
+  width: 200px;
+  height: 180px;
+  margin-left: 90px;
+  margin-right: 90px;
+ 
+}
+.service_row1{
+  flex-direction: column;
+}
+.Service_Info_text{
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #DDF7E3;
+  width: 100%;
+  height: 280px;
+  font-size: 10px;
+  padding-top: 30px;
+
+}
+
+.text_s{
+  font-size: 10px;
+ 
+
+}
+.test_s p{
+  padding-top: 20px;
+}
+
+.truycapnhanh{
+
+  width: 90%;
+  height: 40px;
+  font-size: 10px;
+  padding: 10px 5px 5px 5px;
+  border: 2px dashed pink;
+  border-radius: 10px;
+position: relative;
+top: -18px;
+}
+
+#Service_Info_text_b{
+  font-size: 20px;
+
+}
+
+
+.cancel_br br{
+  display: none;
+}
+
+
+.btn_home_more a{
+  width: 100px;
+  height: 25px;
+  padding-top: 5px;
+  border-radius: 10px;
+  line-height: 15px;
+  font-size: 10px;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+.service-mini a{
+  width: 110px;
+  height: 50px;
+  padding-top: 20px;
+  margin: 5px auto;
+  line-height: 10px;
+  font-size: 9px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: -20px;
+}
+
+
+/*cau hoi*/
+#question_background br{
+  display: none;
+}
+.service_model_header{
+  font-size: 20px;
+  width: 100%;
+}
+.stay_title2 b{
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+
+.question_box{
+width: 280px;
+height: 36px;
+font-size: 8px;
+padding:auto;
+line-height: 10px;
+}
+
+.close_box{
+width: 25px;
+height: 15px;
+margin-left: 215px;
+font-size: 7px;
+}
+
+.anser_box{
+font-size: 8px;
+width: 280px;
+height: auto;
+line-height: 10px;
+}
+
+
+.spa_pr_tb_b{
+font-size: 20px;
+line-height: 10px;
+
+}
+#spa_pr_tb_div b{
+font-size: 13px;
+line-height: 16px;
+
+}
+
+#spa_pr_tb_div hr{
+height: 25px;
+border: 1px solid #a02424;
+}
+#spa_pr_tb{
+width: 310px;
+height: 30px;
+margin-left: 25px;
+}
+#spa_pr_d2_font{
+font-size: 8px;
+width: 200px;
+line-height: 10px;
+
+}
+#spa_pr_d2_icon{
+width: 30px;
+height: 10px;
+}
+
+.service_hr_add{
+display: none;
+}
+#color{
+  height: 150px;
+}
+
+/*cost*/
+.stay_cost{
+ 
+  height: 50px;
+  border: 2px dashed red;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: -10px;
+}
+#text_cost{
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ipad mini*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+/*Headbar*/
+ #stay_headbar {
+  width: 100%;
+  height: 20px;
+  margin-top: 60px;
+  background-color: white;
+  display: flex;    
+  position: sticky;
+  z-index: 1;
+  justify-content: center;
+}
+
+#stay_headbar ul li {
+  list-style: none;
+}
+
+#stay_rows{
+  width: 30%;
+  display: flex;
+  justify-content: none;
+  margin-top: -25px;
+}
+#spa_input{
+  display: none;
+}
+
+#headbar_search{
+display: none;
+
+}
+#spa_search{
+  width: 10px;
+display: none;
+}
+
+
+
+.box{
+height: 70px;
+  display: flex;
+  justify-content: none;
+}
+
+.box li {
+  width: 150px;
+  margin-top: -10px;
+  color:black;
+  
+  list-style: none;
+  margin-left:2px;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold; 
+  height: 20px;
+}
+
+.box > li {
+  height: 30px;
+  padding: 0;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+.box > li a{
+  color: black;
+  font-size: 15px;
+}
+.box li:hover{
+  background-color: pink;
+  height: 20px;
+}
+
+#cha1 {
+position: relative;
+margin-left: 30px;
+font-family: Arial;
+}
+
+#cha1 .con1 {
+  position: absolute;
+  left: -1px;
+  top: 20px;
+  display: none;
+
+}
+
+#cha1:hover .con1 {
+display: block;
+}
+
+/*Định dạng lại cấu trúc của con*/
+#cha1 > .con1 li {
+  width: 150px;
+  font-size: 15px;
+  background-color: white;
+  margin-top: 2px;
+  height: 20px;
+  line-height: 10px;
+  font-family: Arial;
+}
+
+#cha1 > .con1 li:hover{
+  background-color: pink;
+}
+
+#cha2{
+  position: relative;
+}
+
+#cha2 > .con2  li{
+  width: 150px;
+  background-color: white;
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+#cha2 .con2{
+position: absolute;
+  top: 20px;
+  left: -1px;
+  display: none;
+
+}
+#cha2:hover .con2{
+display: block;
+}
+
+#cha2 > .con2 li{
+width: 150px;
+background-color: white;
+margin-top: 2px;
+height: 20px;
+line-height: 10px;
+}
+
+
+
+
+
+
+
+
+/*Poster*/
+.spa_poster{
+  height: 230px;
+}
+#spa_poster_b{
+  padding-top: 50px;
+  margin-top: 50px;
+   padding-left: 43px;
+ 
+  }
+  #spa_poster_text{
+    line-height: 65px;
+    position: relative;
+    top: -215px;
+    font-size: 60px;
+    width: 400px;
+    height: 120px;
+    border-radius: 20px;
+    padding-top: 0px;
+    
+    }
+    #spa_poster_text hr{
+      width: 100px;
+      position: relative;
+      top: 10px;
+    }
+    
+    #stay_poster_text2{
+      font-size: 15px;
+      line-height: 10px;
+      position: relative;
+      top: 10px;
+      text-align: center;
+    }
+
+    #service_main{
+      width: 100%;
+      height: 4000px;
+      margin: auto;
+      font-family:  Arial;
+      line-height: 15px;
+      position: relative;
+      top: -150px;
+    }
+
+
+    .service-pr-h1{
+      font-size: 30px;
+    }
+
+    #service_meo4chu{
+      width: 60px;
+      height: 30px;
+    }
+
+    #service-pr-i{
+      font-size: 15px;
+    }
+
+    .service_modelStay{
+    
+      border-radius: 40px;
+      height: 300px;
+      width: 30%;
+      margin: auto;
+     
+    }
+    .service_modelStay div{
+      padding: 10px;
+      padding-left: 20px;
+      padding-right:20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    #service_modelStay_b{
+      font-size: 20px;
+    }
+
+    .stay_more a {
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      line-height: 20px;
+      font-size: 10px;
+      margin-top: -15px;
+      padding-top: 5px;
+    }
+    
+    .service_modelMedicine{
+      border-radius: 40px;
+      height: 300px;
+      width: 30%;
+      margin: auto;
+    }
+
+    .service_modelMedicine b{
+      font-size: 20px;
+    }
+    .service_modelMedicine div{
+      padding: 10px;
+      padding-left: 20px;
+      padding-right:20px;
+      font-size: 14px;
+      line-height: 20px;
+      
+    }
+    .medicine_more a {
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      line-height: 20px;
+      font-size: 10px;
+      margin-top: -15px;
+      padding-top: 5px;
+    }
+
+
+    .service_modelClean{
+      border-radius: 40px;
+      height: 300px;
+      width: 30%;
+      margin: auto;
+    }
+
+    .service_modelClean b{
+      font-size: 20px;
+    }
+    .service_modelClean div{
+      padding: 10px;
+      padding-left: 20px;
+      padding-right:20px;
+      font-size: 14px;
+      line-height: 20px;
+      
+    }
+    .spa_more a {
+      width: 80px;
+      height: 30px;
+      border-radius: 10px;
+      line-height: 20px;
+      font-size: 10px;
+      margin-top: -15px;
+      padding-top: 5px;
+    }
+
+/*Thông tin chung về các loại hình dịch vụ*/
+.service_preview{
+  height: 350px;
+  padding-top: 50px;
+ 
+}
+
+#service_head{
+  margin-left: 10px;
+  line-height: 15px;
+}
+
+#service_preview_b{
+  font-size: 30px;
+  padding-left: 50px;
+
+
+}
+#service_preview_font{
+  font-size: 25px;
+  padding-left: 50px;
+
+}
+
+#service_preview_i{
+  font-size: 15px;
+  color: darkgreen;
+  text-align: justify;
+  padding-left: 0px;
+  width: 100%;
+padding-right: -30px;
+line-height: 20px;
+  
+}
+
+#service_meo{
+  width: 200px;
+  height: 200px;
+  margin-left: -20px;
+}
+
+#service_preview_hr1{
+  width: 80%;
+  border: 1px solid green;
+        
+}
+#service_preview_hr2{
+  height: 150px;
+  width: 0px; 
+  border: 1px solid green; 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+/*Nội dung chung về lưu trú*/
+.service_model_header{
+  font-size: 30px;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.service_row1{
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  
+}
+
+
+#Service_Info{
+  width: 100%;
+  height: 700px;
+  background:white ;
+  /*background:#eaf6d7;*/
+}
+
+.service_bg2_img img{
+  width: 230px;
+  height: 310px;
+ 
+}
+.Service_Info_text{
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #DDF7E3;
+  width: 70%;
+  height: 310px;
+  font-size: 14px;
+  padding-top: 30px;
+
+}
+
+.text_s{
+  font-size: 14px;
+  line-height: 20px;
+ 
+
+}
+.test_s p{
+  padding-top: 20px;
+}
+
+.truycapnhanh{
+
+  width: 95%;
+  height: 100px;
+  font-size: 25px;
+  padding: 40px 5px 5px 5px;
+  border: 2px dashed pink;
+  border-radius: 10px;
+position: relative;
+top: -100px;
+}
+
+#Service_Info_text_b{
+  font-size: 20px;
+
+}
+
+.cancel_br br{
+  display: none;
+}
+
+
+.btn_home_more a{
+  width: 180px;
+  height: 45px;
+  padding-top: 15px;
+  border-radius: 10px;
+  line-height: 15px;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.service-mini a{
+  width: 230px;
+  height: 90px;
+  padding-top: 30px;
+  margin: 20px auto;
+  line-height: 10px;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: -100px;
+}
+
+
+
+
+
+
+
+
+
+/*cau hoi*/
+#question_background br{
+  display: none;
+}
+
+#color{
+  height: 200px;
+  position: relative;
+  top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Cau hoi & thuong hieu*/
+/*cau hoi*/
+.stay_title2 b{
+  font-size: 25px;
+  margin-top: -10px;
+}
+
+.question_box{
+width: 600px;
+height: 36px;
+font-size: 15px;
+padding:auto;
+line-height: 20px;
+}
+
+.close_box{
+width: 30px;
+height: 20px;
+margin-left: 515px;
+font-size: 10px;
+}
+
+.anser_box{
+font-size: 13px;
+width: 600px;
+line-height: 18px;
+height: auto;
+}
+
+
+
+
+.spa_pr_tb_b{
+font-size: 30px;
+
+}
+#spa_pr_tb_div b{
+font-size: 25px;
+line-height: 30px;
+
+}
+
+#spa_pr_tb_div hr{
+height: 55px;
+border: 2px solid #a02424;
+}
+#spa_pr_tb{
+width: 600px;
+height: 30px;
+margin-left: 25px;
+}
+#spa_pr_d2_font{
+font-size: 15px;
+width: 400px;
+line-height: 20px;
+
+}
+#spa_pr_d2_icon{
+width: 50px;
+height: 15px;
+}
+
+.service_hr_add{
+display: none;
+}
+
+}

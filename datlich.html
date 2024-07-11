@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETCARE - Nơi tình yêu và sức khỏe cho thú cưng của bạn</title>
+    <link rel="stylesheet" href="./css/datlich.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">THÔNG TIN KHÁCH HÀNG</h3>
+
+                <div class="inputBox">
+                    <span><b style="color: red;">*</b> HỌ VÀ TÊN:</span>
+                    <input type="text" placeholder="VD: Nguyễn Văn A">
+                </div>
+                <div class="inputBox">
+                    <span><b style="color: red;">*</b> EMAIL :</span>
+                    <input type="email" placeholder="VD: nguyenvana@yahoo.com" required>
+                </div>
+                <div class="inputBox">
+                    <span><b style="color: red;">*</b> ĐỊA CHỈ :</span>
+                    <input type="text" placeholder="Số nhà - đường - quận"required>
+                </div>
+                <div class="inputBox">
+                    <span><b style="color: red;">*</b> THÀNH PHỐ :</span>
+                    <input type="text" placeholder="TP. Hồ Chí Minh"required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Loại thú cưng :</span>
+                        <select id="pets">
+                            <option value="Chó" aria-required="true">Chó</option>
+                            <option value="Mèo">Mèo</option>
+                            <option value="Chó và mèo">Chó và Mèo</option>
+                          </select>
+                    </div>
+                    <div class="inputBox2">
+                        <span>Loại Dịch vụ :</span>
+                        <select id="pets-service">
+                            <option value="Làm đẹp">Làm đẹp</option>
+                            <option value="Chăm Sóc Y Tế">Chăm Sóc Y Tế</option>
+                            <option value="Lưu Trú">Lưu Trú</option>
+                          </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Hình thức thanh toán</h3>
+
+                <div class="inputBox">
+                    <span>HỖ TRỢ THANH TOÁN :</span>
+                    <img src="img/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span><b style="color: red;">*</b> SỐ ĐIỆN THOẠI :</span>
+                    <input type="tel" placeholder="Số điện thoại của bạn..."required>
+                </div>
+                <div class="inputBox">
+                    <span>THỜI GIAN MONG MUỐN :</span>
+                    <input type="datetime-local" placeholder="Thời gian để thực hiện dịch vụ...">
+                </div>
+                <div class="inputBox">
+                    <span>LƯU Ý CỦA KHÁCH HÀNG :</span>
+                    <input type="text" placeholder="Yêu cầu cho nhân viên khi thực hiện" required>
+                </div>
+
+                <div>
+                    <div class="inputBox">
+                        <span>Số lượng bé :</span>
+                        <input type="number" min="1" max="10" placeholder="Từ 1-10 bé >10 vui lòng ghi ở mục trên">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="HOÀN TẤT ĐƠN ĐẶT LỊCH" class="submit-btn">
+
+    </form>
+</div>   
+
+    <a class="gotopbtn" href="index.html"><i class="fas fa-arrow-left"></i></a>    
+</body>
+</html>

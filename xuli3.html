@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tải lên hình ảnh và hiển thị trên trang web</title>
+  <!-- Link tới các tập tin CSS của Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-3">Tải lên hình ảnh và hiển thị trên trang web</h1>
+    <!-- Form để tải lên hình ảnh -->
+    <form>
+      <div class="form-group">
+        <label for="file">Chọn hình ảnh:</label>
+        <input type="file" class="form-control-file" id="file" name="file">
+      </div>
+      <button type="button" class="btn btn-primary" onclick="uploadFile()">Tải lên</button>
+    </form>
+    <!-- Hiển thị hình ảnh đã tải lên -->
+    <div id="image-container"></div>
+  </div>
+
+  <!-- Link tới các tập tin JavaScript của Bootstrap và jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    function uploadFile() {
+      // Lấy thông tin về tập tin đã chọn
+      var fileInput = document.getElementById('file');
+      var file = fileInput.files[0];
+
+      // Đọc nội dung của tập tin đó
+      var reader = new FileReader();
+      reader.onload = function() {
+        // Hiển thị hình ảnh đã tải lên
+        var imageContainer = document.getElementById('image-container');
+        var image = new Image();
+        image.src = reader.result;
+        imageContainer.appendChild(image);
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+</html>

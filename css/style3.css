@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffa5b9;
+    --font-heading: 'Coiny', cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+    background: #ffc62f;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: black
+}
+
+.heading.lv1 {
+    font-size: 3.2rem;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+    text-align: center;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;/* break-word là nếu từ dài quá sẽ xuống dòng, break-all là nếu từ dài quá sẽ cắt từ đó */
+}
+
+
+
+/* Header */
+#shop-main {
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+#shop-header {
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 63px;
+    display: flex;
+    position: sticky;/*để header luôn ở trên cùng*/
+    z-index: 1;/*z-index để header luôn ở trên cùng*/
+    align-items: center;
+    justify-content: center;
+}
+
+/* #shop-nav {
+    display: inline-block;
+} */
+
+
+#shop-nav, .shop-subnav {
+    list-style: none;
+}
+
+#shop-nav > li {
+    display: inline-block;
+}
+
+#shop-nav li {
+    position: relative;
+}
+
+#shop-nav >li > a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#shop-nav  li  a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    display: inline-block;
+    border-radius: 2px;
+    
+}
+
+#shop-nav li:hover .shop-subnav {
+    display: block;
+}
+
+#shop-nav li:hover > a,
+#shop-nav .shop-subnav li:hover {
+    background-color: #ffa5b9;
+    color: white;
+    border-radius: 3px;
+}
+
+#shop-nav .shop-subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 236px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+}
+
+#shop-nav .shop-subnav a {
+    padding: 0 auto;
+    color: #000;
+    line-height: 40px;
+}
+
+#shop-nav .shop-subnav li:hover {
+    background-color: #ffa5b9;
+    color: white;
+}
+
+#shop-nav .shop-subnav li:hover > a {
+    background-color: #ffa5b9;
+    color: white;
+}
+
+#nav .nav-arr-down {
+    font-size: 20px;/*mặc định font là 16px*/
+}
+
+/*Làm cho .ti-shopping-cart nằm sát bên phải,
+dùng position: absolute,không dùng*/
+.ti-shopping-cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 60px;
+    padding: 0 24px;
+    font-size: 30px;
+}
+
+.ti-shopping-cart:hover {
+    background-color: #ffa5b9;
+    border-radius: 50%;
+    color: white;
+}
+
+#shop-body {
+    width: 100%;
+}
+
+
+
+/* Begin Introduce */
+.shop-introduce-begin {
+    padding: 20px 0 65px;
+    background: #fffcf4;
+}
+
+.shop-introduce-begin .body {
+    display: flex;
+}
+
+/* shop-introduce-begin left */
+.shop-introduce-begin .media-block {
+    position: relative;
+    width: 48%;
+}
+
+.shop-introduce-begin .media-block .img {
+    display: block;
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.shop-introduce-begin-summary {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 270px;
+    padding: 24px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.shop-introduce-begin-summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.shop-introduce-begin-summary .item + .item {
+    margin-top: 22px;
+}
+
+.shop-introduce-begin-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff9e8;
+}
+
+/* shop-introduce-begin right */
+.shop-introduce-begin .content-block {
+    width: 52%;
+    padding: 64px 0 0 20px;
+}
+
+.shop-introduce-begin .desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: black;
+}
+
+.shop-introduce-begin .content-block .img-bottom {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+.shop-introduce-mid {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.shop-introduce-mid .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-introduce-mid .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.shop-introduce-mid .images img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.shop-introduce-mid img.lower {
+    margin-top: 34px;
+}
+
+.shop-introduce-mid .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.shop-introduce-mid .desc {
+    margin-top: 16px;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    color: black;
+}
+
+.shop-introduce-mid .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    background-color: #ffc62f;
+}
+
+.shop-introduce-mid .content .cta-btn:hover {
+    background-color: #ffa5b9;
+}
+
+
+
+
+.shop-introduce-end {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #f8e7eb;
+}
+
+.shop-introduce-end .shop-introduce-end-top {
+    text-align: center;
+}
+
+.shop-introduce-end .shop-introduce-end-top .desc {
+    margin: 16px auto auto;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    color: black;
+}
+
+.shop-introduce-end .shop-introduce-end-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.shop-introduce-end .item {
+    width: calc(33.33% - 20px);
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #ebebeb;
+    transition: all 0.3s ease;
+}
+
+.shop-introduce-end .item:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+
+}
+
+.shop-introduce-end .item .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.shop-introduce-end .item .thumb:hover {
+    filter: brightness(0.8);
+    transform: scale(1.01);
+}
+
+.shop-introduce-end .item .info {
+    padding: 10px 20px 28px;
+}
+
+
+
+.shop-introduce-end .item .title a {
+    display: inline-block;
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    color: black;
+}
+
+.shop-introduce-end .item .btn {
+    font-size: 1.4rem;
+}
+
+.shop-introduce-end .item .btn:hover {
+    background: var(--primary-color);
+}
+
+.shop-slogan {
+    /* margin-top: 63px; */
+    padding: 96px 0;
+    background: #f8e7eb;
+}
+
+img:hover {
+    filter: brightness(0.8);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng gõ chữ*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Hiệu ứng cho con trỏ*/
+  @keyframes blink-caret {
+    from, to { border-color: #ffc62f }
+    50% { border-color: #ffc62f; }
+  }
+
+.shop-slogan h3 {
+    overflow: hidden; /* Đảm bảo nội dung không bị tiết lộ cho đến khi hoạt ảnh */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Giữ nội dung trên một dòng duy nhất */
+    margin: 0 auto; /* Cuộn nội dung theo chiều ngang */
+    letter-spacing: .15em; /*khoảng cách giữa các chữ*/
+    animation: 
+        typing 4.5s steps(40, end), 
+        blink-caret 3.5s step-end;
+  }
+
+/*Keyframe chữ nhấp nháy liên tục*/
+
+
+  
+
+
+
+

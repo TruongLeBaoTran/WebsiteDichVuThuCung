@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*HEADBAR*/
+.main_center{
+  display: flex;
+  justify-content: center;
+}
+
+/*ADMIN*/
+.admin-head-logo1{
+    
+    height: 50px;
+    background-color: whitesmoke;
+    margin-top: 60px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.admin-pr{
+    color: gray;
+    
+}
+.admin-h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.admin-pr1{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.admin-title{
+    font-size: 20px;
+    color: gray;
+    text-shadow: 2px 2px 4px #ddecff;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    position: relative;
+    top: 10px;
+   
+}
+.admin-avt-full{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+.admin-avt{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.admin-avt b{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 35px;
+    position: relative;
+    top: 20px;
+}
+.admin-sp{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+}
+.admin-sp b{
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.admin-sp-title{
+    height: 40px;
+    background-color: lightgray;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.admin-sp-title2{
+    height: 40px;
+    background-color: lightgray;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 60px;
+    
+}
+.admin-sp-title2 div{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+.admin-sp-title div{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+.admin-sp-content{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.admin-sp-text{
+    display: flex;
+}
+.admin-product{
+    width: 300px;
+    
+    text-align: left;
+}
+.admin-product1{
+    width: 215px;
+    text-align: center;
+}
+
+.admin-btn-add{
+    width: 200px;
+    height: 40px;
+    color: black;
+    background-color: pink;
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+
+}
+

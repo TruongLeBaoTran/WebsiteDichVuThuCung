@@ -1,0 +1,1490 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*HEADBAR*/
+.main_center{
+  display: flex;
+  justify-content: center;
+}
+
+.headbar{
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: #ffa5b9;
+}
+
+.headfull_text{
+  position: relative;
+  top: 6px;
+  display: flex;
+}
+
+.logo_text_petcare0{
+  font-size: 25px;
+  position: relative;
+  left: 150px;
+  display: flex;
+  font-family: "Coiny", cursive;
+}
+
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.logo_text_petcare1{
+  text-shadow: 2px 2px 4px lightsteelblue;
+ color: white;
+ font-size: 25px;
+}
+
+.logo_text_petcare2{
+  color: lightslategray;
+  font-family: "Coiny", cursive;
+ font-size: 13px;
+ position: relative;
+ left: -120px;
+ top: 30px;
+}
+
+.logo_text2_petcare{
+  color: white;
+  font-size: 15px;
+  padding-left: 50px;
+  position: relative;
+  top: 13px;
+
+}
+
+
+.iconmini{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+
+.text3_head{
+  font-size: 13px;
+  display: flex;
+  color: white;
+  position: relative;
+  left: 150px;
+}
+
+.icon_headbar_phone{
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.login_full{
+  position: relative;
+  left: 150px;
+}
+
+.login_full:hover .login_img, .login_full:hover .login_text{
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+
+.login_img{
+  width: 27x;
+  height: 27px;
+  margin-left: 60px;
+}
+
+.login_text{
+  font-size: 13px;
+  color: white;
+  padding-top: 1px;
+  padding-left: 20px;
+}
+
+
+/*END- HEADBAR*/
+
+
+
+/*Trang chủ-head*/
+
+.trangchu_poster{
+  width: 100%;
+  height: 500px;
+  background-image: url("./img/poster_trangchu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  filter: blur(0.5px);
+}
+
+.trangchu_poster_text{
+  line-height: 65px;
+  position: relative;
+  top: -360px;
+  font-size: 50px;
+  color: palevioletred ;
+  font-family: "Coiny", cursive;
+  text-shadow: 2px 2px 4px #ddecff;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 950px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+.trangchu_poster_text2{
+  color: black;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-family: Arial;
+  text-shadow: 2px 2px 4px lightpink;
+}
+
+/*End-head-trangchu*/
+
+
+
+/* .headbar .logo{
+  padding-left: 20px;
+  width: 50px;
+  cursor: pointer;
+} */
+.headbar .login{
+  z-index: 999;
+  width: 120px;
+  height: 35px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-left: 87%;
+  margin-top: 12px;
+  transition: .5s;
+}
+
+.login:hover{
+  background: #ffffff;
+  color: #504f4f;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background: #ffa5b9;
+  transition: all .5s ease;
+}
+/*Định dạng phần đầu sidebar*/
+.sidebar header {
+  padding-top: 80px;
+  z-index: 99999;
+  font-size: 22px;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+  background: #ffa5b9;
+  user-select: none;
+}
+/*Định dạng thẻ a sidebar*/
+.sidebar .sidebar-nav a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  border-top: 1px solid rgba(221, 221, 221, 0.1);
+  transition: .4s;
+}
+/*Animation lúc hover chuột vào các thẻ a (con của ul>li)*/
+.sidebar .sidebar-nav li:hover a{
+  padding-left: 35px; /*Lùi ra 50px*/
+  background: #d4d4d4;
+  color:black;
+  border-radius: 20px;
+}
+.sidebar .sidebar-nav a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+
+/*Nút mở*/
+label #btn{
+  z-index: 1111;
+  position: fixed;
+  /* background: #ffa5b9; */
+  /* background: #504f4f; */
+  border-radius: 3px;
+  cursor: pointer;
+  left: 0px;
+  top: 0;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  padding: 10px 12px;
+  transition: all .5s;
+}
+/*Khi click vào sẽ -> đến sidebar*/
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  z-index: 9999;
+  top: 10px;
+  left: 82.5px;
+  font-size: 44px;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background:  #FFA5B9;
+  height: 48px;
+}
+
+#check:checked ~ article{
+  margin-left: 200px;
+}
+
+article{
+  transition: all .5s;
+}
+
+.gotopbtn{
+  z-index: 9999;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+	border-radius: 50%;
+  border: 2px solid rgba(10, 8, 8, 0.5);
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center; 
+  line-height:50px;
+  color: #ccc;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+.contac_messenger {
+  bottom: 150px;
+  right: 20px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(179.83deg,rgb(226,73,167) 0.15%,rgb(120,76,255) 92.02%);
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  border-radius: 100%;
+  animation: contac_messengerfb 2s 0s ease-out infinite;
+  cursor: url('./img/pawprint.png'), auto;
+  transition: all 0.5s;
+}
+
+.contac_messenger p {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  width: 220px;
+  background: #fce0ef;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  padding: 10px 5px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+
+.contac_messenger:hover p {
+  display: block;
+  opacity: 1;
+}
+
+
+.contac_messenger:active {
+  width: 70px;
+  height: 70px;
+  cursor: url('./img/pawprint.png'), auto;
+}
+.contac_messenger i {
+  font-size: 30px;
+  margin: 0 auto;
+  color:#fff;
+}
+@keyframes contac_messengerfb {
+  0% { 
+      box-shadow:0 0 0 0 rgba(13,144,255);
+  }
+  75% {
+      box-shadow:0 0 0 16px transparent;
+  } 
+  100% {
+      box-shadow:0 0 0 0 transparent;
+  }
+  }
+@keyframes contac_messengerfb-rung-lac {
+  0% {
+      -webkit-transform:rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+      -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+      -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+      -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+  } 
+  40% {
+      -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+  } 
+  50% {
+      -webkit-transform:rotate(0) scale(1) skew(1deg);
+  } 
+  100% {
+      -webkit-transform:rotate(0) scale(1) skew(1deg);
+  }
+}
+  .rung {
+    animation: contac_messengerfb-rung-lac 1.5s ease infinite;
+}
+
+/*Poster*/
+
+.service_pr_image1{
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./img/pets2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img h1{
+  color: rgb(75, 68, 68);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width:3px;
+  font-size: 60px;
+  font-family:'Nunito', sans-serif;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+}
+
+.img h3{
+  color: rgb(75, 68, 68);
+  font-size: 30px;
+  font-family:'Montserrat', sans-serif;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+	padding-top: 25px;
+}
+
+
+.content1{
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.content h1{
+  padding-top: 10px;
+  text-align: center;
+  color: #FFA5B9;
+  font-size: 30px;
+}
+
+.content1 h2{
+  padding-left: 35px;
+  width: 60%;
+  text-align: center;
+  margin: 0 40%;
+}
+
+.content .thongtin{
+  color: #8bbdff;
+}
+
+.content1 .camket{
+  padding-left: 25px;
+}
+
+.content1 p{
+  text-align: center;
+  justify-content: center;
+  width: 35%;
+  font-size: 20px;
+  margin: 0 55%;
+}
+
+/* .content1 .p2{
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  margin: 0 0%;
+} */
+
+/* .content1 .dichvu{
+  width: 60%;
+  text-align: center;
+  padding-left: 50px;
+} */
+
+.content1 img{
+  background: #ffb9b8;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  margin-left: 120px;
+  float: left;
+  width: 30%;
+  background-size: cover;
+  border-radius: 100px;
+  box-shadow: 0 0 15px rgb(54, 54, 54);
+  margin-top: -30px;
+}
+
+.content1 .img2{
+  background: #8bbdff;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  margin-left: 120px;
+  float: left;
+  width: 30%;
+  background-size: cover;
+  border-radius: 100px;
+  box-shadow: 0 0 15px rgb(54, 54, 54);
+  margin-top: -30px;
+}
+
+.content1 .box{
+  z-index: 9999;
+  float: left;
+  background-color: #FFA5B9;
+  padding-left: 80px;
+  width: 50%;
+  background-size: cover;
+}
+
+
+/*Introduce All*/
+/*Giới thiệu tổng quan*/
+/*CỦA MỊ*/
+.outstanding-box{
+  background-color: #97DEFF;
+  width:800px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.outstanding1-box{
+  width: 200px;
+  height: 500px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color:#fac3d1;
+}
+
+
+.outstanding2-box {
+  width: 600px;
+  height: 100px;
+  border-bottom-right-radius: 30px;
+  background-color: white;
+  position: relative;
+  top: -554px;
+  left: 200px;
+  display: flex;
+}
+
+.outstanding2-box img:hover{
+  transform: scale(1.1);
+  filter: brightness(0.8);
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+.outstanding-dog{
+  width: 300px;
+  height: 450px;
+  z-index: 1;
+  position: relative;
+  top: -450px;
+  left: 10px;
+}
+
+.dogvuive1{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  right: -90px;
+  top: -80px;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.dogvuive2{
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  position: relative;
+  top: -80px;
+  right: -110px;
+  transition: all 0.5s ease-in-out;
+}
+
+.dogvuive3{
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  position: relative;
+  top: -80px;
+  right: -130px;
+  transition: all 0.5s ease-in-out;
+}
+.outstanding-full-text{
+  position: relative;
+  top: -1000px;
+  left: 200px;
+  padding-left: 100px;
+}
+
+.dogname{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 300px;
+  font-weight: bold;
+  font-family: Arial;
+  color: white;
+  text-shadow: 2px 2px 4px #dbad2d;
+  line-height: 45px;
+  position: relative;
+  top: -130px;
+  left: -10px;
+}
+
+.cost_dog{
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px lightgray;
+  padding-top: 20px;
+}
+.cost{
+  text-decoration: line-through;
+  color: gray;
+  font-size: 18px;
+}
+.corgi{
+  color: palevioletred;
+  font-family: "Coiny", cursive;
+  text-shadow: 2px 2px 4px #dbad2d;
+  font-size: 55px;
+}
+.bestseller{
+  width: 80px;
+  height: 100px;
+  position: relative;
+  top: -45px;
+  right: -390px;
+    z-index: 1;
+}
+.contentdog_full{
+  display: flex;
+  position: relative;
+  top: -120px;
+  left: -40px;
+}
+.dog_hr{
+  height: 50px;
+  border: 2px solid #dbad2d;
+  width: 0px;
+  position: relative;
+  left: -70px;
+}
+
+.content_dog{
+  font-size: 15px;
+  color: white;
+  position: relative;
+  left: -190px;
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CỦA TRÍ*/
+
+hr{
+  width: 50%;
+  margin: 0 auto;
+  height: 2px;
+  background: #FFA5B9;
+  border: none;
+}
+.home_intro_all_content {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 70px;
+}
+
+.home_intro_block1 {
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_slider {
+  text-align: center;
+}
+
+.btn_slider button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ffffff44;
+  background: #fff;
+  color: grey;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin: 20px 10px;
+}
+
+.btn_slider button:hover {
+  background: #ffa5b9;
+  color: white;
+  box-shadow: 0 0 15px rgb(54, 54, 54);
+}
+
+.home_intro_ct1 h2 {
+  font-family: "Coiny", cursive;
+  text-align: center;
+  color: palevioletred;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px lightskyblue;
+}
+
+.home_intro_b1_item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  margin: 0 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.home_intro_b1_item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgb(54, 54, 54);
+  
+}
+
+.home_intro_b1_item .item_top {
+  width: 100%;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.home_intro_b1_item .item_top img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.home_intro_b1_item .item_top img:hover {
+  filter: brightness(0.8);
+}
+
+.home_intro_b1_item .item_bottom {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home_intro_b1_item .item_bottom h3 {
+  font-size: 24px;
+  font-family: "Coiny", cursive;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.home_intro_b1_item .item_bottom p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  padding: 20px;
+  text-align: justify;
+}
+
+/*keyframes rung lắc*/
+@keyframes shake {
+  0% {
+      transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+      transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+      transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+      transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*key frames đổi màu nền từ trái sang phải*/
+@keyframes bgchange {
+  0% {
+      background: linear-gradient(to right, #f5cd60, #f5cd60);
+  }
+  50% {
+      background: linear-gradient(to right, #f5cd60, #ffa5b9);
+  }
+  100% {
+      background: linear-gradient(to right, #ffa5b9, #ffa5b9);
+  }
+}
+
+.btn_home_more a {
+  width: 200px;
+  height: 50px;
+  background: #f5cd60;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_home_more a:hover {
+  /* background: #ffa5b9; */
+  animation: bgchange 2s ease infinite alternate,shake 2s ease-in-out infinite alternate;
+  color: white;
+  border: 1px solid lightgrey;
+  transform: scale(1.1) translateY(-5px); 
+  box-shadow: 0 0 15px grey;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+
+/*Cam kết*/
+.home_intro_ct2 {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 40px;
+}
+
+.home_intro_ct2_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
+}
+
+.intro_ct2_body_top h2 {
+  font-family: "Coiny", cursive;
+  color: palevioletred;
+  padding-bottom: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px lightskyblue;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro_ct2_left {
+  width: 95%;
+
+}
+
+.intro_ct2_body_top hr {
+  width: 60%;
+  height: 2px;
+  background: #ffa5b9;
+  border: none;
+  margin: 20px auto;
+}
+
+.intro_ct2_body_top ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.intro_ct2_body_top ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #48496a;
+}
+.intro_ct2_body_top ul li::before {
+  content: "✓";
+  color: #ffa5b9;
+  font-size: 30px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+.about__checklist {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  gap: 36px;
+  margin-top: 30px;
+}
+
+.about__check-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #48496a;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__check-item:hover {
+  color: #ffa5b9;
+  cursor: url('./img/pawprint.png'), auto;
+  transform: scale(1.1) translateY(-5px);
+
+}
+
+
+.about__check-item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #f5cd60;
+  box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+  border-radius: 4px;
+}
+
+.about__check-item::after {
+  position: absolute;
+  top: -4px;
+  left: 5px;
+  content: url(./img/check.svg);
+}
+
+.intro_ct2_right {
+  position: relative;
+}
+
+.about__card {
+  position: absolute;
+  top: 80px;
+  left: -60px;
+  width: 180px;
+  padding: 30px 26px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about__card-title {
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1;
+  color: #fff;
+}
+
+.about__card-desc {
+  margin-top: 14px;
+  font-size: 22px;
+  line-height: 1.43;
+  color: #fff;
+}
+
+.about__card-decor {
+  position: absolute;
+  top: -39px;
+  right: -32px;
+}
+
+.about__img-wrap {
+  position: relative;
+  width: 494px;
+  margin-left: auto;
+}
+
+.about__img-wrap::after {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: -1;
+  content: "";
+  height: 336px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+}
+
+.about__img {
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Thành tích*/
+.home_intro_ct3 {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 40px;
+}
+
+.home_intro_ct3_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.home_intro_ct3_heading h2 {
+  font-family: "Coiny", cursive;
+  color: palevioletred;
+  padding-bottom: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px lightskyblue;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home_intro_ct3_heading hr {
+  width: 60%;
+  height: 2px;
+  background: #ffa5b9;
+  border: none;
+  margin: 20px auto;
+}
+
+.achive {
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achive_item {
+  width: calc(100% / 3);
+  padding: 0 20px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.achive_item:hover {
+  transform: scale(1.02);
+  
+}
+
+.achive_item_left {
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.achive_item_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.achive_item_right {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.item_right_count {
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.item_right_count .counter {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffa5b9;
+}
+
+.item_right_count p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #48496a;
+}
+
+.home_intro_ct4 {
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/*Feedback*/
+.home_intro_ct4 h2 {
+  font-family: "Coiny", cursive;
+  color: palevioletred;
+  padding-bottom: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px lightskyblue;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home_intro_ct4 hr {
+  width: 60%;
+  height: 2px;
+  background: #ffa5b9;
+  border: none;
+  margin: 20px auto;
+}
+
+.slide-row {
+  display: flex;
+  width: 3200px;
+  transition: 0.8s;
+}
+
+.slide-col {
+  width: 800px;
+  margin: 0 50px;
+  height: 500px;
+  position: relative;
+}
+
+.user-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.user-text {
+  background-color: #fce0ef;
+  width: 400px;
+  position: absolute;
+  left: -6%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color: #48496a;
+  padding: 20px;
+  z-index: 1;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #5bd6e2;
+}
+
+.user-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fce0ef;
+}
+
+.user-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.user-text h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: palevioletred;
+  margin-left: 190px;
+}
+
+.home_intro_ct4_container {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.home_btn_slider {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -150px;
+} 
+
+.btn_slider {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #fac3d1;
+  margin: 4px 10px;
+  border-radius: 15px;
+  cursor: url('./img/pawprint.png'), auto;
+  transition: 0.5s;
+}
+
+.active {
+  width: 45px;
+  background-color: #f5cd60;
+}
+
+.home_intro_ct4_slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+/* Footer */
+#footer {
+  width: 100%;
+  
+  background-image: linear-gradient(180deg,rgba(201, 134, 134, 0.9),rgba(92, 80, 80, 0.8)), url('./img/home_footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+
+.footer_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr 1.5fr;
+  grid-template-rows: 1fr;
+  color: white;
+  padding: 20px 0;
+}
+
+.column1 {
+  padding-left: 20px;
+}
+
+.column1 h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.column1 h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #5bd6e2;
+  height: 2px;
+  width: 40%;
+  margin: 5px;
+}
+
+.column1 .address {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/*Cho .footer-text xuống dòng 2 và trải dài ra hết 4 cột*/
+
+.column2 .menu {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.column2 .menu .title-menu {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.column2 .menu .title-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #5bd6e2;
+  height: 2px;
+  width: 100%;
+  margin: 5px;
+}
+
+.column2 .list-menu ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.column2 .list-menu ul li a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 500;
+  text-shadow: 0 0 1px #5bd6e2;
+}
+
+.column2 .list-menu ul li:hover a {
+  color: #5bd6e2;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+.column3 .menu {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.column3 .menu .title-menu {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.column3 .menu .title-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #5bd6e2;
+  height: 2px;
+  width: 100%;
+  margin: 5px;
+}
+
+.column3 .list-menu ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.column3 .list-menu ul li:hover a {
+  color: #5bd6e2;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+.column3 .list-menu ul li a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 500;
+  text-shadow: 0 0 1px #5bd6e2;
+}
+
+.column4 {
+  padding-right: 30px;
+}
+.column4 .menu {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.column4 .menu .title-menu {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.column4 .menu .title-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #5bd6e2;
+  height: 2px;
+  width: 100%;
+  margin: 5px;
+}
+
+
+.column4 .follow-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.column4 .follow-option li {
+  list-style: none;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 60%;
+  padding: 10px;
+  background-color: #FFA5B9;
+}
+
+.column4 .follow-option li:hover {
+  background-color: #5bd6e2;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+
+.column4 .follow-option li i {
+  font-size: 20px;
+  color: white;
+}
+
+.column4 .follow-option li:hover i {
+  color: white;
+  cursor: url('./img/pawprint.png'), auto;
+}
+.footer-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 20px;
+  text-align: center;
+  grid-column: 1/5;
+  text-shadow: 0 0 1px #5bd6e2;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+.footer-text b {
+  color: #5bd6e2;
+  cursor: url('./img/pawprint.png'), auto;
+}
+
+.cetifi img {
+  width: 70%;
+  object-fit: cover;
+  margin: 5px auto;
+}

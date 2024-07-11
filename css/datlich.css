@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 173, 244, 0.7), rgba(255, 173, 244, 0.7));
+}
+
+.container form{
+  border-radius: 30px;
+  padding: 20px;
+  width: 700px;
+  background: rgba(60, 232, 255, 0.418);
+  box-shadow: 0 5px 10px rgb(46, 203, 224);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container form .row .col{
+  flex: 1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin: 15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .flex .inputBox2{
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #aed4ff;
+  box-shadow: 0 0px 2px rgb(90, 90, 90);
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: hsl(303, 100%, 78%);
+}
+
+#pets{
+  text-align: center;
+  margin: 0 5px;
+}
+
+#pets-service{
+  text-align: center;
+}
+
+.gotopbtn{
+  z-index: 9999;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+	border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  left: 30px;
+  top: 20px;
+  text-decoration: none;
+  text-align: center; 
+  line-height:50px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  transition: all 0.5s;
+}

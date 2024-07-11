@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/petcare_icon_title.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- font awesome -->
+    <link rel="stylesheet" href="./css/style_frameshop.css">
+    <link rel="stylesheet" href="./css/style_detail-product.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <title>Rọ mõm</title>
+</head>
+<body>
+    <div id="stay_headbar">
+        <div id="stay_rows"> <!--Bọc tất cả về center-->
+            <ul class="box"> <!--Chung 1 dòng-->
+                <li id="cha1">PHỤ KIỆN
+                    <ul class="con1">
+                        <li><a href="./shop_list.html" target="">Lồng Cho Pet</a></li>
+                        <li><a href="./shop_list2.html" target="">Vòng Đeo Cổ</a></li>
+                        <li><a href="./shop_list3.html" target="">Rọ Mõm Cho Chó</a></li>
+                        <li><a href="./shop_list4.html" target="">Đồ Chơi</a></li>
+                        <li><a href="./shop_list5.html" target="">Quần Áo</a></li>
+
+                    </ul>
+                </li>
+                <li id="cha2">THÚ CƯNG
+                    <ul class="con2">
+                        <li><a href="./shop_list6.html">Chó Con Tìm Chủ</a></li>
+                        <li><a href="./shop_list7.html">Mèo Con Tìm Chủ</a></li>
+                    </ul>
+                </li>
+                <li><a href="./shop_list8.html">THỨC ĂN</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <!--End Header-->
+
+
+
+
+
+
+
+
+    <!--Main-->
+    <!--Banner saleoff-->
+    <div class="container-fluid margin_top_banner">
+        <div class="row">
+            <div class="col-12 px-3">
+                <div class="shop_frame-countdown-expired" style="display: none;">
+                    Đã hết thời gian giảm giá
+                </div>                
+                <div class="shop_frame-countdown-saleoff">
+                    <div class="shop_frame-countdown-info">
+                        <div class="shop_frame-countdown-heading">Giảm Giá Cực Sốc</div>
+                        <div class="shop_frame-countdown-subheading">giảm đến 50%</div>
+                    </div>
+                    <div class="shop_frame-countdown-timer">
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value days">10</div>
+                            <div class="shop_frame-countdown-unit">Ngày</div>
+                        </div>
+    
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value hours">00</div>
+                            <div class="shop_frame-countdown-unit">Giờ</div>
+                        </div>
+    
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value minutes">00</div>
+                            <div class="shop_frame-countdown-unit">Phút</div>
+                        </div>
+    
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value seconds">00</div>
+                            <div class="shop_frame-countdown-unit">Giây</div>
+                        </div>
+                    </div>
+    
+                    <a href="#" class="shop_frame-countdown-btn">MUA NGAY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End Banner saleoff-->
+
+    <!--Begin shop list-->
+    <script>
+        function sortProducts() {
+            var selectBox = document.getElementById("sorting-select");
+            var selectedOption = selectBox.options[selectBox.selectedIndex].value;
+        
+            var productRow = document.querySelector(".product-list");
+            var products = Array.from(productRow.getElementsByClassName("product"));
+        
+            switch (selectedOption) {
+                case "highToLow":
+                    products.sort(function (a, b) {
+                        var priceA = getPrice(a);
+                        var priceB = getPrice(b);
+                        return priceB - priceA;
+                    });
+                    break;
+                case "lowToHigh":
+                    products.sort(function (a, b) {
+                        var priceA = getPrice(a);
+                        var priceB = getPrice(b);
+                        return priceA - priceB;
+                    });
+                    break;
+            }
+        
+            while (productRow.firstChild) {
+                productRow.removeChild(productRow.firstChild);
+            }
+        
+            products.forEach(function (product) {
+                productRow.appendChild(product);
+            });
+        }
+        
+        function getPrice(product) {
+            var priceText = product.querySelector(".price").textContent;
+            var price = parseFloat(priceText.replace(/[^\d.]/g, ''));
+            return price;
+        }
+    </script>
+
+    <script>
+        function timKiem() {
+        // Lấy giá trị từ ô tìm kiếm
+        var tuKhoa = document.getElementById("keyword").value.toLowerCase();
+
+        // Lấy danh sách các sản phẩm
+        var sanPhamDivs = document.querySelectorAll(".product-list > div");
+
+        // Lặp qua từng sản phẩm để tìm kiếm
+        for (var i = 0; i < sanPhamDivs.length; i++) {
+            var sanPham = sanPhamDivs[i];
+
+            // Lấy tên sản phẩm
+            var tenSanPham = sanPham.querySelector(".name-product").textContent.toLowerCase();
+
+            // Kiểm tra nếu tên sản phẩm chứa từ khóa tìm kiếm
+            if (tenSanPham.indexOf(tuKhoa) > -1) {
+            sanPham.style.display = ""; // Hiển thị sản phẩm
+            } else {
+            sanPham.style.display = "none"; // Ẩn sản phẩm
+            }
+        }
+        }
+    </script>
+    <!--Filter product-->
+    <div class="container mt-3 text-bg-light">
+        <div class="row px-2">
+            <div class="col-4 col-md-4">
+                <input class="search-product" type="text" id="keyword" style="width: 50%;" placeholder="Nhập tên sản phẩm">
+                <button class="search-product-btn" onclick="timKiem()">Tìm kiếm</button>
+            </div>
+            
+            <div class="col-md-2">
+                <p class="h-50">Sắp xếp theo: </p>
+            </div>
+            <div class="col-3 col-md-3 d-flex justify-content-md-center">
+                <button type="button" class="btn btn-outline-primary me-3 filter-button" data-min="0" data-max="300">0-300</button>
+                <button type="button" class="btn btn-outline-primary me-3 filter-button" data-min="300" data-max="900">300-900</button>
+                <button type="button" class="btn btn-outline-primary me-3 filter-button" data-min="900" data-max="Infinity">900+</button>
+            </div>
+            <div class="col-md-3">
+                <div class="sorting-options">
+                    <select class="form-select w-75" id="sorting-select" onchange="sortProducts()">
+                        <option selected disabled>Lựa chọn</option>
+                        <option value="highToLow">Giá từ cao đến thấp</option>
+                        <option value="lowToHigh">Giá từ thấp đến cao</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Filter product-->
+
+    <!--Begin product list-->
+    <div class="container mt-3">
+        <div class="row product-list">
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3 product">
+                <div class="card sanpham" >
+                    <img src="./img/shop3-product1.jpg" class="card-img-top" alt="...">
+                    <img src="./img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      <!-- Modal 1-->
+
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-fullscreen-md-down modal-fullscreen-lg-down modal-fullscreen-xl-down">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Xem nhanh sản phẩm</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <h3>Lồng vận chuyển chó mèo IRIS ATC Dog & Cat Kennel</h3>
+                                    <div class="row">
+                                        <div class="col-6 col-xl-5">
+                                            <img src="./img/shop1-product1.jpg" alt="" class="img-fluid mx-auto d-block">
+                                        </div>
+                                        <div class="col-2 col-xl-2">
+                                            <img src="./img/shop-details5.jpg" alt="" class="img-thumbnail mx-auto d-block">
+                                            <img src="./img/shop-details6.jpg" alt="" class="img-thumbnail mx-auto d-block">
+                                            <img src="./img/shop-details7.jpg" alt="" class="img-thumbnail ">
+                                        </div>
+                                        <div class="col-4 col-xl-5">
+                                            <p>Thương hiệu: <strong>AUPET</strong></p>
+                                            <div class="price m-1">
+                                                <span class="text-danger fw-bolder me-2 price">Giá: 600.000<sup>đ</sup></span>
+                                                <span class="text-decoration-line-through fst-italic">1.200.000<sup>đ</sup></u></span>
+                                            </div>
+                                            <div class="row mb">
+                                                <div class="col-12 col-sm-12 col-md-12 gap-3 mb-2">
+                                                    <button type="button" class="btn btn-outline-primary">Size SS 600.000<sup>đ</sup></button>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 gap-3">
+                                                    <button type="button" class="btn btn-outline-primary">Size SS 600.000<sup>đ</sup></button>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 gap-3 mt-2">
+                                                    <button type="button" class="btn btn-outline-primary">Size SS 600.000<sup>đ</sup></button>
+                                                </div>
+                                            </div>
+                                            <div class="shop-count m-2">
+                                                <span class="text-primary fw-bolder me-3">Số lượng:</span>
+                                                <input type="number" min="0" value="1" placeholder="">
+                                            </div>
+                                            <a href="./details_product.html" target="_blank" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <i class="ti-plus" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i>
+                    <!--Modal 2-->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Coming soon</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Coming soon... 🌻🌻🌻
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-body ">
+                        <h5 class="card-title name-product">Rọ mõm chó hình mỏ vịt PAW Aduck</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3 price">Giá: 75.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">90.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="./details_product.html" target="_blank" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3 product">
+                <div class="card sanpham" >
+                    <img src="./img/shop3-product2.jpg" class="card-img-top" alt="...">
+                    <img src="./img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title name-product">Rọ mõm cho chó giả da HAND IN HAND Dog Muzzle</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3 price">Giá: 75.000<sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">90.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="./details_product.html" target="_blank" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3 product">
+                <div class="card sanpham"  >
+                    <img src="./img/shop3-product3.jpg" class="card-img-top" alt="...">
+                    <img src="./img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title name-product">Rọ mõm cho chó mõm ngắn PAW nhiều kích cỡ</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3 price">Giá: 150.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">300.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                           
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <!--End Main-->
+
+    <!--Footer-->
+        <div class="container-fluid text-bg-light m-3">
+            <h2>Rọ mõm cho chó | Dog Muzzles</h2>
+            <p>Rọ mõm cho chó là một sản phẩm tốt trong việc kiểm soát chú chó của bạn khi đưa chúng đi ra đường.
+                Vừa thực hiện đúng pháp luật quy định lại vừa an toàn, kết hợp với Vòng cổ dây dắt chó đầy đủ thì đi đâu bạn cũng sẽ cảm thấy yên tâm.
+                Hãy cùng khám phá những sản phẩm rọ mõm cho chó bán chạy nhất tại Pet Shop.
+                <br>
+                Hãy để Pet Shop giúp bạn và thú cưng của bạn có một chuyến đi an toàn và thoải mái. 
+                Đặt hàng ngay hôm nay để trải nghiệm sản phẩm tuyệt vời của chúng tôi.
+            </p>
+        </div>
+    <!--End Footer-->
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const products = document.querySelectorAll('.product');
+    
+        filterButtons.forEach(button => {
+          button.addEventListener('click', filterProducts);
+        });
+    
+        filterButtons.forEach(function(button) {
+            button.addEventListener('click', filterProducts);
+        });
+
+
+        function filterProducts(event) {
+          const minPrice = parseFloat(event.target.getAttribute('data-min'));
+          const maxPrice = parseFloat(event.target.getAttribute('data-max'));
+    
+          products.forEach(product => {
+            const priceElement = product.querySelector('.price');
+            const price = parseFloat(priceElement.innerText.replace(/[^0-9.]/g, ''));
+    
+            if (price >= minPrice && price <= maxPrice) {
+              product.style.display = 'block';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+        }
+      </script>
+
+
+    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script src="./js/countdown.js"></script>
+</body>
+</html>

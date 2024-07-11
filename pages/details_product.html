@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../font-icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style_detail-product.css">
+    <title>Shop</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Begin Header -->
+    <div id="shop-main">
+        <div id="shop-header">
+            <!--Begin navigation-->
+            <ul id="shop-nav">
+                <li><a href="">Phụ Kiện
+                    <i class="nav-arr-down ti-angle-down"></i>
+                    </a>
+                    <ul class="shop-subnav">
+                        <li><a href="./shop_list.html" target="">Lồng Cho Pet</a></li>
+                        <li><a href="./shop_list.html" target="">Vòng Đeo Cổ</a></li>
+                        <li><a href="./shop_list.html" target="">Rọ Mõm Cho Chó</a></li>
+                        <li><a href="./shop_list.html" target="">Đồ Chơi</a></li>
+                        <li><a href="./shop_list.html" target="">Quần Áo</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Mua Bán Thú Cưng
+                    <i class="nav-arr-down ti-angle-down"></i>
+                     </a>
+                    <ul class="shop-subnav">
+                        <li><a href="">Chó Con Tìm Chủ</a></li>
+                        <li><a href="">Mèo Con Tìm Chủ</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Thức Ăn</a></li>
+            </ul>
+        </div>
+        <div id="shop-details-pro">
+            <div class="shop-details-pro-container">
+                <div class="pro-content-top">
+                    <h2>Trang Xem Chi Tiết Sản Phẩm</h2>
+                </div>
+                <div class="shop-details-pro-content">
+                  
+                    <div class="pro-content-left">
+
+                        <div class="pro-content-left-big-img">
+                            <img src="../img/shop1-product1.jpg" alt="">
+                        </div>
+
+                        <div class="pro-content-left-small-img">
+                            <img src="../img/shop1-product1.jpg" alt="">
+                            <img src="../img/shop-details5.jpg" alt="">
+                            <img src="../img/shop-details6.jpg" alt="">
+                            <img src="../img/shop-details7.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="pro-content-right">
+                        <div class="pro-content-right-name">
+                            <h2>Lồng vận chuyển chó mèo AUPET BP27</h2>
+                            <p>Thương hiệu: <strong>AUPET</strong></p>
+                            <div class="pro-content-right-star">
+                                <span>Đánh giá:</span>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <div class="pro-content-right-price">
+                                <p>Giá: <strong>1.200.000 <sup>đ</sup> </strong></p>
+                                <p>Giá khuyến mãi: <strong>600.000 <sup>đ</sup></strong></p>
+                            </div>
+                            <div class="pro-content-right-price-size">
+                                <p>Các loại size:</p>
+                                <ul class="size-option">
+                                    <li>Size SS - 600.000 <sup>đ</sup></li>
+                                    <li>Size S - 600.000 <sup>đ</sup></li>
+                                    <li>Size M - 600.000 <sup>đ</sup></li>
+                                </ul>
+                            </div>
+                            <div class="pro-content-right-count">
+                                <p>Số lượng:</p>
+                                <input type="number" name="" id="" min="0" value="1">
+                            </div>
+                            <div class="pro-content-right-buy-button">
+                                <button class="pro-content-buy-button" onclick="myFunction()"><a href="">
+                                    <b>MUA HÀNG</b>
+                                    <img src="../img/shopping-cart (1).png" alt="">
+                                </a>
+                                </button>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var proImg = document.querySelectorAll(".pro-content-left-small-img img");
+            var proImgBig = document.querySelector(".pro-content-left-big-img img");
+            for (let i = 0; i < proImg.length; i++) {
+                proImg[i].addEventListener("click", function () {
+                    proImgBig.src = proImg[i].src;
+                })
+            }
+        </script>
+
+        <div id="shop-description">
+            <div class="shop-description-container">
+                <h3>Mô tả sản phẩm</h3>
+                <div class="shop-description-container-content">
+                    <p class="shop-description-intruc">
+                        Lồng vận chuyển hàng không cho chó mèo sử dụng nguyên liệu nhựa PP ABS không mùi nhập khẩu
+                        <br> 
+                        có khả năng chịu được trọng lượng lớn,
+                        người trưởng thành đứng lên trên lồng cũng không có vấn đề gì.</p>
+                    <p class="shop-description-size">Màu Sắc: Xanh Dương/Hồng</p>
+                </div>
+                <hr>
+                <h3>Lợi ích chính</h3>
+                <ul class="shop-description-container-useful">
+                    <li>Sản phẩm lồng vận chuyển chó mèo dễ dàng tháo lắp, sạch sẽ dễ chịu, dễ rửa sạch, tiêu độc.</li>
+                    <li>Sản phẩm với thiết kế thích hợp, đường nét tinh tế, kết cấu cân xứng.</li>
+                    <li>Sản phẩm có kiểu lưới ngăn cửa thép không gỉ an toàn cho thú cưng.</li>
+                </ul>
+                <hr>
+                <h3>Kích thước sản phẩm</h3>
+                <ul class="shop-description-container-useful">
+                    <li>Size SS - Mã sản phẩm 0922 (BP270) : 29 x 41 x 31 (cm).</li>
+                    <li>Size S - Mã sản phẩm 0925 (BP274) : 34 x 50 x 32 (cm).</li>
+                    <li>Size M - Mã sản phẩm 0923 (BP275) : 39 x 59 x 41 (cm).</li>
+                </ul>
+            </div>
+        </div>
+        <div id="shop-recommend">
+            <h3>Sản Phẩm Nổi Bật</h3>
+            <ul class="shop1-products">
+                <li>
+                    <div class="sh1-products-item">
+                        <div class="sh1-products-top">
+                            <a href="#" class="sh1-products-thumb">
+                                <img src="../img/shop1-product1.jpg" alt="">
+                            </a>
+                            <div class="sh1-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <a href="#" class="sh1-products-buy">Thêm vào giỏ hàng
+                              
+
+                            </a>
+                            <!--Mua ngay-->
+                        </div>
+                        <div class="sh1-products-info">
+                            
+                            <a href="#" class="sh1-products-name">Lồng vận chuyển chó mèo AUPET BP27 </a>
+                            <div class="sh1-products-price">600.000đ
+                                <div class="sh1-products-price-notsale">1.200.000đ</div>
+                                
+                            </div>
+                            <div class="sh1-products-price-star">
+                                <div class="ti-star"></div> 
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                            </div>
+                            <a href="#" class="sh1-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh1-products-item">
+                        <div class="sh1-products-top">
+                            <a href="#" class="sh1-products-thumb">
+                                <img src="../img/shop1-product2.jpg" alt="">
+                            </a>
+                            <div class="sh1-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh1-products-buy">Thêm vào giỏ hàng
+                               
+                            </a>
+                        </div>
+                        <div class="sh1-products-info">
+                            
+                            <a href="#" class="sh1-products-name">Lồng vận chuyển chó mèo IRIS ATC</a>
+                            <div class="sh1-products-price">600.000đ
+                                <div class="sh1-products-price-notsale">1.200.000đ</div>
+                                
+                            </div>
+                            <div class="sh1-products-price-star">
+                                <div class="ti-star"></div> 
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                            </div>
+                            <a href="#" class="sh1-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh1-products-item">
+                        <div class="sh1-products-top">
+                            <a href="#" class="sh1-products-thumb">
+                                <img src="../img/shop1-product3.jpg" alt="">
+                            </a>
+                            <div class="sh1-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh1-products-buy">Thêm vào giỏ hàng
+                               
+                            </a>
+                        </div>
+                        <div class="sh1-products-info">
+                            
+                            <a href="#" class="sh1-products-name">Lồng vận chuyển chó mèo cỡ đại AUPET</a>
+                            <div class="sh1-products-price">700.0000đ
+                            <div class="sh1-products-price-notsale">1.400.000đ</div>
+                               
+                            </div>
+                            <div class="sh1-products-price-star">
+                                <div class="ti-star"></div> 
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                            </div>
+                            <a href="#" class="sh1-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sh1-products-item">
+                        <div class="sh1-products-top">
+                            <a href="#" class="sh1-products-thumb">
+                                <img src="../img/shop1-product4.jpg" alt="">
+                            </a>
+                            <div class="sh1-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh1-products-buy">Thêm vào giỏ hàng
+                               
+                            </a>
+                        </div>
+                        <div class="sh1-products-info">
+                            
+                            <a href="#" class="sh1-products-name">Lồng vận chuyển chó mèo tay kéo AUPET</a>
+                            <div class="sh1-products-price">800.000đ
+                            <div class="sh1-products-price-notsale">1.600.000đ</div>
+                               
+                            </div>
+                            <div class="sh1-products-price-star">
+                                <div class="ti-star"></div> 
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                            </div>
+                            <a href="#" class="sh1-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sh1-products-item">
+                        <div class="sh1-products-top">
+                            <a href="#" class="sh1-products-thumb">
+                                <img src="../img/shop1-product5.jpg" alt="">
+                            </a>
+                            <div class="sh1-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh1-products-buy">Thêm vào giỏ hàng
+                               
+                            </a>
+                        </div>
+                        <div class="sh1-products-info">
+                            
+                            <a href="#" class="sh1-products-name">Lồng vận chuyển chó mèo IRIS PDPC</a>
+                            <div class="sh1-products-price">800.000đ
+                            <div class="sh1-products-price-notsale">1.600.000đ</div>
+                                
+                            </div>
+                            <div class="sh1-products-price-star">
+                                <div class="ti-star"></div> 
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                            </div>
+                            <a href="#" class="sh1-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="sh1-products-item">
+                        <div class="sh1-products-top">
+                            <a href="#" class="sh1-products-thumb">
+                                <img src="../img/shop1-product6.jpg" alt="">
+                            </a>
+                            <div class="sh1-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh1-products-buy">Thêm vào giỏ hàng
+                               
+                            </a>
+                        </div>
+                        <div class="sh1-products-info">
+                            
+                            <a href="#" class="sh1-products-name">Lồng vận chuyển chó mèo AUPET</a>
+                            <div class="sh1-products-price">650.000đ
+                            <div class="sh1-products-price-notsale">1.300.000đ</div>
+                               
+                            </div>
+                            <div class="sh1-products-price-star">
+                                <div class="ti-star"></div> 
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                                <div class="ti-star"></div>
+                            </div>
+                            <a href="#" class="sh1-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+       function myFunction() 
+       {
+            alert("Xiền đâu mà mua 😂😂😂");
+       }
+    </script>
+
+</body>
+</html>
+

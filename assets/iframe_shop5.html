@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <title>Quần Áo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+
+        #main-shop5 {
+            width: 100%;
+        }
+
+        .shop5-content {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .shop5-heading h3 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 20px 30px;
+        }
+
+        ul.shop5-products {
+            display: flex;/*Hiển thị hàng ngang*/
+            flex-wrap: wrap;/*Chia hàng ngang*/
+            /* justify-content:safe; */
+            list-style: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        ul.shop5-products li {
+            /* width: 30%;
+            margin-bottom: 20px; */
+            flex-basis: calc(100%/4);/*Chiều rộng*/
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 30px;
+            /* background-color: #ffa5b9; */
+        }
+        
+        ul.shop5-products li:hover {
+            transform: scale(1.02);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .sh5-products-thumb {
+            width: 100%;
+            /* background-color: #ffa5b9; */
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul.shop5-products li img {
+            width: 90%;
+            height: auto;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+
+
+        ul.shop5-products li .sh5-products-info a {
+            padding: 10px 0;
+            display: block;
+            text-decoration: none;
+            
+        }
+
+        .sh5-products-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            padding: 10px 0px;
+        }
+
+        .sh5-products-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: red;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sh5-products-price-notsale {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            padding: 0 20px;
+            text-decoration: line-through;
+            line-height: 18px;
+        }
+
+
+        .sh5-products-details {
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            border-radius: 10px;
+            /* background-color: #ffa5b9; */
+            margin-top: 10px;
+        }
+
+        .sh5-products-top {
+            position: relative;
+            overflow: hidden; 
+            /*Ẩn phần cha*/
+        }
+
+        .sh5-products-top:hover .sh5-products-buy {
+            bottom: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        .sh5-products-buy {
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            color: white;
+            background-color: green;
+            padding: 10px 0;
+            border-radius: 5px;
+            position: absolute;
+            width: 100%;
+            bottom: -64px;
+            /* opacity: 0; */
+        }   
+
+        .sh5-products-img-tag-saleoff .img-saleoff {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            width: 40%;
+        }
+
+        .sh5-products-buy:hover {
+            background-color: green;
+            /* opacity: 1; */
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        .ti-shopping-cart {
+            margin-left: 10px;
+            font-weight: 400;
+
+        }
+
+        .sh5-products-price-star {
+            padding-top: 15px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            
+        }
+
+        .ti-star {
+            font-weight: 700;
+            font-size: 20px;
+            color: black;
+            margin: 0 5px;
+        }
+
+        .ti-star:hover {
+            color: red;
+        }
+        
+        .sh5-products-top img:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+        }
+
+       
+        .sh5-products-item:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .sh5-products-details:hover {
+            background-color: #ffa5b9;
+            color: white;
+            transition: all 0.1s ease-in-out;
+            border: 3px solid whitesmoke;
+
+        }
+
+        .sh5-products-top {
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .sh5-products-item .sh5-products-top {
+            background-color: #ffa5b9;
+        }
+
+        .shop5-products-about {
+            padding: 20px;
+            background-color: #f1f1f1;
+            text-align: justify;
+            line-height:1.5;
+            letter-spacing: 1px;
+        }
+        
+        .shop5-products-about h3 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .shop5-countdown-saleoff {
+            width: 100%;
+            /* padding: 20px; */
+            background-image: radial-gradient(circle at 50% 50%, #ffa5b9 0%, #f43030 100%);
+            left: 0;
+            right: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            position: relative;
+            border-radius: 4px;
+        }
+
+        /*Mép trên bên trái của .shop5-countdown-saleoff */
+        .shop5-countdown-saleoff::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 20px solid;
+            border-radius: 0 0 10px 0;
+            border-color:  white #ffa5b9 #ffa5b9 white;
+            
+        }
+
+        /*Mép dưới bên phải của .shop5-countdown-saleoff */
+        .shop5-countdown-saleoff::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: 20px solid; 
+            border-radius: 10px 0 0 0;
+            border-color:  #ffa5b9 white white #ffa5b9;
+        }
+
+
+
+        .shop5-countdown-saleoff .more-icon {
+            color: white;
+            width: 20px;
+        }
+
+        .shop5-countdown-heading {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .shop5-countdown-subheading {
+            font-size: 18px;
+            color: white;
+        }
+
+        .shop5-countdown-timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .shop5-countdown-group {
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+            gap: 8px;
+            color: white;
+        }
+
+        .shop5-countdown-value {
+            font-size: 30px;
+            font-weight: 600;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .shop5-countdown-unit {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .shop5-countdown-btn {
+            padding: 10px 20px;
+            background-image: linear-gradient(68deg, rgb(219, 219, 38) 0%, rgb(223, 231, 117) 50%, rgb(243, 251, 0) 100%);
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .shop5-countdown-btn:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+
+            
+        } 
+        
+        /*Làm cho panel countdown tự co dãn */
+
+        @media (max-width: 800px) {
+            .shop5-countdown-saleoff, .shop5-products  {
+                justify-content: center; /*Chỉnh vị trí countdown */
+                gap: 20px;
+                
+            }
+        }
+
+        @media (max-width: 640px) {
+            .shop5-countdown-saleoff, .shop5-products {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+
+        /*Làm cho shop5-countdown-saleoff background đổi màu nhấp nháy liên tục từ hồng, vàng, sang đỏ*/
+        @keyframes change-color {
+            0% {
+                background-image: radial-gradient(circle at 50% 50%, #ffa5b9 0%, #f53a3a 100%);
+            }
+            50% {
+                background-image: radial-gradient(circle at 50% 50%, #f53a3a 0%, #e92d2d 100%);
+            }
+            100% {
+                background-image: radial-gradient(circle at 50% 50%, #ffa5b9 0%, #fa0202 100%);
+            }
+        }
+
+        .shop5-countdown-saleoff {
+            animation: change-color 1s infinite;
+        }
+       
+
+        /*Làm cho .shop5-countdown-btn rung rung liên tục */
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        .shop5-countdown-btn {
+            animation: shake 1s infinite;
+        }
+
+        .shop5-home-filter {
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .shop5-filter-group {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .shop5-filter-heading {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .shop5-filter-select {
+            border-radius: 5px;
+        }
+
+        .shop5-filter-select select {
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #333;
+            margin-left: 10px;
+        }
+
+        .shop5-filter-btn {
+            padding-left: 20px;
+        }
+
+        .shop5-filter {
+            border: none;
+            outline: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .shop5-filter-select select:hover {
+            background-color: #ffa5b9;
+            color: white;
+        }
+
+        .shop5-filter-select select option {
+            background-color: white;
+            color: black;
+        }
+
+        .shop5-filter:hover {
+            background-color: #ffa5b9;
+            color: white;
+        }
+
+        #shop-main {
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+#shop-header {
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 63px;
+    display: flex;
+    position: sticky;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #shop-nav {
+    display: inline-block;
+} */
+
+#shop-nav {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* text-align: center; */
+}
+
+
+#shop-nav, .shop-subnav {
+    list-style: none;
+}
+
+#shop-nav > li {
+    display: inline-block;
+}
+
+#shop-nav li {
+    position: relative;
+}
+
+#shop-nav >li > a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#shop-nav  li  a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    display: inline-block;
+    border-radius: 2px;
+    
+}
+
+#shop-nav li:hover .shop-subnav {
+    display: block;
+}
+
+#shop-nav li:hover > a,
+#shop-nav .shop-subnav li:hover {
+    background-color: #ffa5b9;
+    color: white;
+    border-radius: 3px;
+}
+
+#shop-nav .shop-subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 236px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 5px;
+}
+
+#shop-nav .shop-subnav a {
+    padding: 0 auto;
+    color: #000;
+    line-height: 40px;
+}
+
+#shop-nav .shop-subnav li:hover {
+    background-color: #ffa5b9;
+    color: white;
+}
+
+#shop-nav .shop-subnav li:hover > a {
+    background-color: #ffa5b9;
+    color: white;
+}
+
+#nav .nav-arr-down {
+    font-size: 20px;/*mặc định font là 16px*/
+}
+
+/*Làm cho .ti-shopping-cart nằm sát bên phải,
+dùng position: absolute*/
+.ti-shopping-cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 60px;
+    padding: 0 24px;
+    font-size: 30px;
+}
+
+.ti-shopping-cart:hover {
+    background-color: #ffa5b9;
+    border-radius: 50%;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main-shop5">
+        <div class="shop5-content">
+            <div id="shop-main">
+                <div id="shop-header">
+                    <!--Begin navigation-->
+                    <ul id="shop-nav">
+                        <li><a href="">Phụ Kiện
+                            <i class="nav-arr-down ti-angle-down"></i>
+                            </a>
+                            <ul class="shop-subnav">
+                                <li><a href="../assets/iframe_shop1.html" target="">Lồng Cho Pet</a></li>
+                                <li><a href="../assets/iframe_shop2.html" target="">Vòng Đeo Cổ</a></li>
+                                <li><a href="../assets/iframe_shop3.html" target="">Rọ Mõm Cho Chó</a></li>
+                                <li><a href="../assets/iframe_shop4.html" target="">Đồ Chơi</a></li>
+                                <li><a href="../assets/iframe_shop5.html" target="">Quần Áo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Mua Bán Thú Cưng
+                            <i class="nav-arr-down ti-angle-down"></i>
+                             </a>
+                            <ul class="shop-subnav">
+                                <li><a href="../assets/iframe_shop6.html">Chó Con Tìm Chủ</a></li>
+                                <li><a href="../assets/iframe_shop7.html">Mèo Con Tìm Chủ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../assets/iframe_shop8.html">Thức Ăn</a></li>
+                    </ul>
+                    <i class="cart-icon"> 
+                        <a href=""><i class="ti-shopping-cart"></i></a>
+                    </i>
+                </div>
+            </div>
+            <div class="shop5-heading">
+                <h3>Quần Áo Cho Pet</h3>
+            </div>
+
+
+             <!--Panel CountDown-->
+             <div class="shop5-countdown-saleoff">
+                <div class="shop5-countdown-info">
+                    <div class="shop5-countdown-heading">Giảm Giá Cực Sốc</div>
+                    <div class="shop5-countdown-subheading">giảm đến 50%</div>
+                </div>
+                <div class="shop5-countdown-timer">
+                    <div class="shop5-countdown-group">
+                        <div class="shop5-countdown-value days">10</div>
+                        <div class="shop5-countdown-unit">Ngày</div>
+                    </div>
+
+                    <div class="shop5-countdown-group">
+                        <div class="shop5-countdown-value hours">00</div>
+                        <div class="shop5-countdown-unit">Giờ</div>
+                    </div>
+
+                    <div class="shop5-countdown-group">
+                        <div class="shop5-countdown-value minutes">00</div>
+                        <div class="shop5-countdown-unit">Phút</div>
+                    </div>
+
+                    <div class="shop5-countdown-group">
+                        <div class="shop5-countdown-value seconds">00</div>
+                        <div class="shop5-countdown-unit">Giây</div>
+                    </div>
+                </div>
+
+                <a href="#" class="shop5-countdown-btn">MUA NGAY</a>
+            </div>
+
+            <!--Filter Product-->
+            <div class="shop5-home-filter">
+                <div class="shop5-filter-group">
+                    <div class="shop5-filter-heading">Sắp xếp theo</div>
+                    <div class="shop5-filter-select">
+                        <select name="" id="">
+                            <option value="">Mặc định</option>
+                            <option value="">Giá tăng dần</option>
+                            <option value="">Giá giảm dần</option>
+                            <option value="">Tên A-Z</option>
+                            <option value="">Tên Z-A</option>
+                        </select>
+                    </div>
+                    <div class="shop5-filter-btn">
+                        <button class="shop5-filter">Phổ biến</button>
+                        <button class="shop5-filter">Bán chạy</button>
+                        <button class="shop5-filter">Mới nhất</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <ul class="shop5-products">
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product1.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <a href="#" class="sh5-products-buy">Thêm vào giỏ hàng
+                               <i class="ti-shopping-cart"></i>
+
+                            </a>
+                            <!--Mua ngay-->
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Quần áo cho chó mèo PET 2JXF216</a>
+                            <div class="sh5-products-price">180.000đ
+                                <div class="sh5-products-price-notsale">360.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product2.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Quần áo cho chó mèo PET 2JXF164</a>
+                            <div class="sh5-products-price">245.000đ
+                                <div class="sh5-products-price-notsale">490.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div></div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product3.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Quần áo cho chó mèo PET 2JXF167</a>
+                            <div class="sh5-products-price">160.000đ
+                            <div class="sh5-products-price-notsale">320.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product4.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Yếm cho chó mèo kèm dây dắt 1JXS043</a>
+                            <div class="sh5-products-price">255.000đ
+                            <div class="sh5-products-price-notsale">510.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product5.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Yếm cho chó mèo kèm dây dắt 1JXS058</a>
+                            <div class="sh5-products-price">255.000đ
+                            <div class="sh5-products-price-notsale">510.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product6.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Vòng cổ cho chó mèo kèm dây dắt 1JXS017</a>
+                            <div class="sh5-products-price">225.000đ
+                            <div class="sh5-products-price-notsale">450.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product7.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Quần áo cho chó mèo PET 2JXF241W</a>
+                            <div class="sh5-products-price">160.000đ
+                            <div class="sh5-products-price-notsale">320.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="sh5-products-item">
+                        <div class="sh5-products-top">
+                            <a href="#" class="sh5-products-thumb">
+                                <img src="../img/shop5-product8.jpg" alt="">
+                            </a>
+                            <div class="sh5-products-img-tag-saleoff">
+                                <img src="../img/saleoff.png" alt="" class="img-saleoff">
+                            </div>
+                            <!--Mua ngay-->
+                            <a href="" class="sh5-products-buy">Thêm vào giỏ hàng
+                                <i class="ti-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="sh5-products-info">
+                            
+                            <a href="#" class="sh5-products-name">Yếm cho chó mèo kèm dây dắt 1JXS049</a>
+                            <div class="sh5-products-price">255.000đ
+                            <div class="sh5-products-price-notsale">510.000đ</div>
+                                <div class="sh5-products-price-star">
+                                    <div class="ti-star"></div> 
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                    <div class="ti-star"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="sh5-products-details">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="shop5-products-about">
+                <div class="shop5-products-about-title">
+                    <h3>Quần áo cho chó giá rẻ | Dog Clothing</h3>
+                </div>
+                <div class="shop5-products-about-content">
+                    <p>Pet Shop cung cấp những loại váy, quần áo cho pet thời trang và tiện dụng. 
+                        Tại đây bạn có rất nhiều sự lựa chọn, bao gồm cả quần áo mùa đông lẫn mùa hè. 
+                        Tất cả sản phẩm phụ kiện cho pet đều có giá rẻ nhất thị trường hiện nay. 
+                        Với sự đa dạng về kích cỡ đảm bảo cún cưng sẽ được mặc những bộ trang phục chuẩn size nhất. 
+                        Cam kết không ở đâu có nhiều mẫu mã quần áo thú cưng đẹp và đa dạng bằng Pet Shop.
+                        <br>
+                        Bạn cho thú cưng mặc quần áo càng sớm càng tốt, chúng sẽ làm quen và thích nghi rất nhanh. 
+                        Vào những ngày giá lạnh, Pet Shop có bán nhiều mẫu áo như: áo khoác, áo choàng, hoodie. 
+                        Tất cả đều có lớp lông dày để giữ nhiệt cho thú cưng.    
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="../countdown.js"></script>
+</body>
+</html>

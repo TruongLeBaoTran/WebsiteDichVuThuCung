@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"> <!-- bootstrap css -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- font awesome -->
+    <link rel="stylesheet" href="../css/style_frameshop.css">
+    <link rel="stylesheet" href="../css/style_detail-product.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid margin_top">
+        <div id="shop-header">
+            <!--Begin navigation-->
+            <ul id="shop-nav">
+                <li><a href="">Phụ Kiện
+                    <i class="nav-arr-down ti-angle-down"></i>
+                    </a>
+                    <ul class="shop-subnav">
+                        <li><a href="./shop_list.html" target="">Lồng Cho Pet</a></li>
+                        <li><a href="./shop_list2.html" target="">Vòng Đeo Cổ</a></li>
+                        <li><a href="./shop_list3.html" target="">Rọ Mõm Cho Chó</a></li>
+                        <li><a href="./shop_list4.html" target="">Đồ Chơi</a></li>
+                        <li><a href="./shop_list.html" target="">Quần Áo</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Mua Bán Thú Cưng
+                    <i class="nav-arr-down ti-angle-down"></i>
+                     </a>
+                    <ul class="shop-subnav">
+                        <li><a href="./shop_list.html">Chó Con Tìm Chủ</a></li>
+                        <li><a href="./shop_list.html">Mèo Con Tìm Chủ</a></li>
+                    </ul>
+                </li>
+                <li><a href="./shop_list.html">Thức Ăn</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--End Header-->
+
+
+
+
+
+
+
+
+    <!--Main-->
+        <!--Banner saleoff-->
+    <div class="container-container-fluid margin_top_banner">
+        <div class="row">
+            <div class="col-12 px-3">
+                <div class="shop_frame-countdown-expired" style="display: none;">
+                    Đã hết thời gian giảm giá
+                </div>                
+                <div class="shop_frame-countdown-saleoff">
+                    <div class="shop_frame-countdown-info">
+                        <div class="shop_frame-countdown-heading">Giảm Giá Cực Sốc</div>
+                        <div class="shop_frame-countdown-subheading">giảm đến 50%</div>
+                    </div>
+                    <div class="shop_frame-countdown-timer">
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value days">10</div>
+                            <div class="shop_frame-countdown-unit">Ngày</div>
+                        </div>
+    
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value hours">00</div>
+                            <div class="shop_frame-countdown-unit">Giờ</div>
+                        </div>
+    
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value minutes">00</div>
+                            <div class="shop_frame-countdown-unit">Phút</div>
+                        </div>
+    
+                        <div class="shop_frame-countdown-group">
+                            <div class="shop_frame-countdown-value seconds">00</div>
+                            <div class="shop_frame-countdown-unit">Giây</div>
+                        </div>
+                    </div>
+    
+                    <a href="#" class="shop_frame-countdown-btn">MUA NGAY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End Banner saleoff-->
+
+    <!--Begin shop list-->
+    <!--Filter product-->
+    <div class="container mt-3 text-bg-light">
+        <div class="row px-1">
+            <div class="col-2">
+                <p class="h-50">Sắp xếp theo: </p>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-primary">Bán chạy</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-primary">Mới nhất</button>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-primary">Phổ biến</button>
+            </div>
+            <div class="col-4">
+                <select class="form-select " aria-label="Default select example" name="">
+                    <option selected>Lựa chọn</option>
+                    <option value="1">Từ A - Z</option>
+                    <option value="2">Giá Từ Cao - Thấp</option>
+                    <option value="3">Giá Từ Thấp Đến Cao</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+    <!--End Filter product-->
+
+    <!--Begin product list-->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" >
+                    <img src="../img/shop2-product1.jpg" class="card-img-top" alt="...">
+                    <img src="../img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      <!-- Modal 1-->
+
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-fullscreen-md-down modal-fullscreen-lg-down modal-fullscreen-xl-down">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Xem nhanh sản phẩm</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <h3>Lồng vận chuyển chó mèo AUPET BP27</h3>
+                                    <div class="row">
+                                        <div class="col-6 col-xl-5">
+                                            <img src="../img/shop1-product1.jpg" alt="" class="img-fluid mx-auto d-block">
+                                        </div>
+                                        <div class="col-2 col-xl-2">
+                                            <img src="../img/shop-details5.jpg" alt="" class="img-thumbnail mx-auto d-block">
+                                            <img src="../img/shop-details6.jpg" alt="" class="img-thumbnail mx-auto d-block">
+                                            <img src="../img/shop-details7.jpg" alt="" class="img-thumbnail ">
+                                        </div>
+                                        <div class="col-4 col-xl-5">
+                                            <p>Thương hiệu: <strong>AUPET</strong></p>
+                                            <div class="danhgia d-flex justify-content-between">
+                                                <p>Đánh giá: </p>
+                                                <div class="price-star">
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                    <i class="ti-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="price m-1">
+                                                <span class="text-danger fw-bolder me-3">Giá: 600.000<sup>đ</sup></span>
+                                                <span class="text-decoration-line-through fst-italic">1.200.000<sup>đ</sup></u></span>
+                                            </div>
+                                            <div class="row mb">
+                                                <div class="col-12 col-sm-12 col-md-12 gap-3 mb-2">
+                                                    <button type="button" class="btn btn-outline-primary">Size SS 600.000<sup>đ</sup></button>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 gap-3">
+                                                    <button type="button" class="btn btn-outline-primary">Size SS 600.000<sup>đ</sup></button>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 gap-3 mt-2">
+                                                    <button type="button" class="btn btn-outline-primary">Size SS 600.000<sup>đ</sup></button>
+                                                </div>
+                                            </div>
+                                            <div class="shop-count m-2">
+                                                <span class="text-primary fw-bolder me-3">Số lượng:</span>
+                                                <input type="number" min="0" value="1" placeholder="">
+                                            </div>
+                                            <a href="./details_product.html" target="_blank" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <i class="ti-plus" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i>
+                    <!--Modal 2-->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Coming soon</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Coming soon... 🌻🌻🌻
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Vòng cổ chó mèo kèm dây dắt cỡ mini</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3">Giá: 70.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">140.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="./details_product.html" target="_blank" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" >
+                    <img src="../img/shop2-product2.jpg" class="card-img-top" alt="...">
+                    <img src="../img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Vòng cổ chó mèo kèm dây dắt cỡ bé</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3">Giá: 80.000<sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">160.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="./details_product.html" target="_blank" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" >
+                    <img src="../img/shop2-product3.jpg" class="card-img-top" alt="...">
+                    <img src="../img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Vòng cổ cho chó cỡ nhỏ PAW bằng da đính cườm</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3">Giá: 170.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">340.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                           
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" >
+                    <img src="../img/shop2-product4.jpg" class="card-img-top" alt="...">
+                    <img src="../img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Vòng cổ chó mèo kèm dây dắt cỡ vừa</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3">Giá: 130.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">260.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                           
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" >
+                    <img src="../img/shop2-product5.jpg" class="card-img-top" alt="...">
+                    <img src="../img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Vòng cổ chó mèo hình bàn chân</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3">Giá: 50.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">100.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-danger"> Hết hàng <i class="ti-shopping-cart"></i></a>
+                           
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-xl-3 mt-3">
+                <div class="card" >
+                    <img src="../img/shop1-product6.jpg" class="card-img-top" alt="...">
+                    <img src="../img/saleoff.png" alt="" class="img_saleoff">
+                    <i class="fa fa-search" title="Xem nhanh" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    <i class="ti-plus"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Vòng cổ cho chó vải dù bấm lỗ</h5>
+                        <div class="price text-center m-1">
+                            <span class="text-danger fw-bolder me-3">Giá: 110.000 <sup>đ</sup></span>
+                            <span class="text-decoration-line-through fst-italic">220.000 <sup>đ</sup></u></span>
+                        </div>
+                        
+                        <div class="price-start text-center m-2">
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                            <i class="ti-star"></i>
+                      </div>
+
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-outline-success"> Mua ngay  <i class="ti-shopping-cart"></i></a>
+                           
+                        </div>
+                    </div>
+                  </div>
+            </div>
+    </div>
+
+    <!--End Main-->
+
+    <!--Footer-->
+        <div class="container text-bg-light m-3">
+            <h2>Vòng cổ cho pet, dây dắt pet | Pet Collars, Harnesses, & Leashes</h2>
+            <p>Chú chó của bạn thích đi chơi chứ? Nhưng chúng lại chạy quá nhanh hoặc không nghe lời bạn, đã đến lúc bắt đầu phải huấn luyện cún cưng của bạn với Vòng cổ & dây dắt cho chó rồi. Không có gì lạ lẫm với những người mới bắt đầu nuôi chó khi không thể giữ chúng đứng yên được một chỗ. Bởi kỹ năng đó cần phải được trải qua giai đoạn huấn luyện căn bản.
+                Mặc dù không bắt buộc phải sử dụng trong mọi tình huống, tuy nhiên dây dắt chó là sản phẩm lý tưởng cho những chú chó của gia đình bạn. Bạn có thể tìm được nhiều mẫu mã, màu sắc, hoa văn, thiết kế từ những sản phẩm đang bày bán tại Pet Shop.
+                <br>
+                Hãy để Pet Shop giúp bạn và thú cưng của bạn có một chuyến đi an toàn và thoải mái. 
+                Đặt hàng ngay hôm nay để trải nghiệm sản phẩm tuyệt vời của chúng tôi.
+            </p>
+        </div>
+    <!--End Footer-->
+
+
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script> <!-- bootstrap js -->
+    <script src="../js/countdown.js"></script>
+</body>
+</html>
